@@ -1,0 +1,28 @@
+/*Variables*/
+$title_font: "Roboto Slab", serif
+$body_font: "Open Sans", sans-serif
+$body_color: #FAF2D9
+$main_color: #08A866
+$margins: 10px 20px
+/*Imports*/
+@import "index"
+@import "welcome"
+@import "workinghours"
+/*General*/
+body
+	background-color: $body_color
+	font-family: $body_font
+button.button-primary
+	background-color: $main_color
+	border: $main_color
+	margin: $margins
+	&:hover
+		background-color: #FFF
+		color: $main_color
+		border: 1px solid #777
+.title
+	font-family: $title_font
+	margin: 10px
+	min-width: 100%
+	text-align: center
+	color: $main_color
