@@ -36,7 +36,9 @@
   text-align: center;
   max-width: 10%; }
 .schedule td {
-  max-width: 1px; }
+  max-width: 1px;
+  font-family: "Open Sans", sans-serif;
+  color: #333; }
 
 /*General */
 body {
