@@ -27,9 +27,9 @@ public class PersonaDAO {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("SELECT id, nombre, "
-            + "apellido_paterno, apellido_materno, alias FROM persona " 
+            + "password, mail, agenda_id FROM persona "
             + "ORDER BY id");    
             ResultSet rs = pstmt.executeQuery();
             
@@ -37,9 +37,9 @@ public class PersonaDAO {
                 PersonaVO persona = new PersonaVO();
                 persona.setId(rs.getString(1));
                 persona.setNombre(rs.getString(2));
-                persona.setApellido_paterno(rs.getString(3));
-                persona.setApellido_materno(rs.getString(4));
-                persona.setAlias(rs.getString(5));
+                persona.setPassword(rs.getString(3));
+                persona.setMail(rs.getString(4));
+                persona.setAgenda_id(rs.getString(5));
                
                 personas.add(persona);
             }
@@ -73,9 +73,10 @@ public class PersonaDAO {
                 personasPorId = new PersonaVO();
                 personasPorId.setId(rs.getString(1));
                 personasPorId.setNombre(rs.getString(2));
-                personasPorId.setApellido_paterno(rs.getString(3));
-                personasPorId.setApellido_materno(rs.getString(4));
-                personasPorId.setAlias(rs.getString(5));
+                personasPorId.setPassword(rs.getString(3));
+                personasPorId.setMail(rs.getString(4));
+                personasPorId.setAgenda_id(rs.getString(5));
+
             }
             
             rs.close();
@@ -95,7 +96,7 @@ public class PersonaDAO {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("DELETE FROM persona WHERE id="+givenId);    
             pstmt.executeUpdate();
             
@@ -120,11 +121,11 @@ public class PersonaDAO {
             Connection conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("UPDATE persona " +
-                     "SET nombre=?, apellido_paterno=?, apellido_materno=?, alias=? " + "WHERE id=?");  
+                     "SET nombre=?, password=?, mail=?, agenda_id=? " + "WHERE id=?");
             pstmt.setString(1, persona.getNombre());
-            pstmt.setString(2, persona.getApellido_paterno());
-            pstmt.setString(3, persona.getApellido_materno());
-            pstmt.setString(4, persona.getAlias());
+            pstmt.setString(2, persona.getPassword());
+            pstmt.setString(3, persona.getMail());
+            pstmt.setString(4, persona.getAgenda_id());
             pstmt.setString(5, persona.getId());
             
             pstmt.executeUpdate();
@@ -141,19 +142,19 @@ public class PersonaDAO {
     }
    
    
-   public PersonaVO insert(final String nombre, final String apellidoPaterno, final String apellidoMaterno, final String alias){
+   public PersonaVO insert(final String nombre, final String password, final String mail, final String agenda_id){
     PersonaVO persona = null;
        try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
   
             Connection conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
-            PreparedStatement pstmt = conn.prepareStatement("INSERT INTO persona (nombre, apellido_paterno, apellido_materno,"
-                    + "alias)" + "VALUES (?, ?, ?, ?)");  
+            PreparedStatement pstmt = conn.prepareStatement("INSERT INTO persona (nombre, password, mail,"
+                    + "agenda_id)" + "VALUES (?, ?, ?, ?, ?)");
             pstmt.setString(1, nombre);
-            pstmt.setString(2, apellidoPaterno);
-            pstmt.setString(3, apellidoMaterno);
-            pstmt.setString(4, alias);
+            pstmt.setString(2, password);
+            pstmt.setString(3, mail);
+            pstmt.setString(4, agenda_id);
             
             pstmt.executeUpdate();
             pstmt.close();
@@ -164,9 +165,9 @@ public class PersonaDAO {
                 persona = new PersonaVO();
                 persona.setId(rs.getString(1));
                 persona.setNombre(nombre);
-                persona.setApellido_paterno(apellidoPaterno);
-                persona.setApellido_materno(apellidoMaterno);
-                persona.setAlias(alias);
+                persona.setPassword(password);
+                persona.setMail(mail);
+                persona.setAgenda_id(agenda_id);
             }
             
            rs.close();

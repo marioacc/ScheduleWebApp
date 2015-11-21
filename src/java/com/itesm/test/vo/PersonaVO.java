@@ -14,9 +14,35 @@ import java.io.Serializable;
 public class PersonaVO implements Serializable{
     private String id;
     private String nombre;
-    private String apellido_paterno;
-    private String apellido_materno;
-    private String alias;
+    private String password;
+    private String mail;
+    private String agenda_id;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
+
+    public String getAgenda_id() {
+        return agenda_id;
+    }
+
+    public void setAgenda_id(String agenda_id) {
+        this.agenda_id = agenda_id;
+    }
+
+
 
     /**
      * @return the id
@@ -49,48 +75,9 @@ public class PersonaVO implements Serializable{
     /**
      * @return the apellido_paterno
      */
-    public String getApellido_paterno() {
-        return apellido_paterno;
-    }
-
-    /**
-     * @param apellido_paterno the apellido_paterno to set
-     */
-    public void setApellido_paterno(String apellido_paterno) {
-        this.apellido_paterno = apellido_paterno;
-    }
-
-    /**
-     * @return the apellido_materno
-     */
-    public String getApellido_materno() {
-        return apellido_materno;
-    }
-
-    /**
-     * @param apellido_materno the apellido_materno to set
-     */
-    public void setApellido_materno(String apellido_materno) {
-        this.apellido_materno = apellido_materno;
-    }
-
-    /**
-     * @return the alias
-     */
-    public String getAlias() {
-        return alias;
-    }
-
-    /**
-     * @param alias the alias to set
-     */
-    public void setAlias(String alias) {
-        this.alias = alias;
-    }
-    
     @Override
     public String toString(){
-        return this.id + " " + this.nombre + " " + this.apellido_paterno;
+        return this.id + " " + this.nombre + " " + this.mail;
     }
     
     @Override
