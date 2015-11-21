@@ -28,28 +28,32 @@
   <!--<link rel="icon" type="image/png" href="images/favicon.png">-->
 
 </head>
-<body class = "workinghours">
-  <h2>Select your free time to work on your projects and tasks</h2>
+<body class = "tasks">
+  <h2>Enter your tasks...</h2>
   <div class = "row">
-    <div class = "two columns">
-      <label for= "weekdays" >Days:</label>
-      <select id="weekdays" class= "seven columns">
-        <option value="1">SUN</option>
-        <option value="2">MON</option>
-        <option value="3">TUE</option>
-        <option value="4">WED</option>
-        <option value="5">THU</option>
-        <option value="6">FRI</option>
-        <option value="7">SAT</option>
+    <div class = "six columns">
+      <label for= "taskname" >Name:</label>
+      <input type= "text" id= "taskname" class= "eleven columns">
+    </div>
+    <div class = "three columns">
+    <p>Select a priority for each task. Multiple tasks can have the same priority</p>
+      <label for= "priority" >Name:</label>
+       <select id="priority" class= "seven columns">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
       </select>
     </div>
-    <div class = "five columns">
-      <label for= "start_time" >From:</label>
-      <input type="time" class= "ten columns" id= "start_time">
-    </div>
-    <div class = "five columns">
-      <label for= "end_time" >To:</label>
-      <input type="time" class= "ten columns" id= "end_time">
+    <div class = "three columns">
+      <label for= "time" >Estimate time to complete:</label>
+      <input type="datetime-local" class= "ten columns" id= "task_time">
     </div>
     <button class = "button-primary center-big">+</button>
   </div>
