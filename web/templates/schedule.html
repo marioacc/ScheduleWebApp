@@ -28,30 +28,44 @@
   <!--<link rel="icon" type="image/png" href="images/favicon.png">-->
 
 </head>
-<body class = "workinghours">
-  <h2>Select your free time to work on your projects and tasks</h2>
-  <div class = "row">
-    <div class = "two columns">
-      <label for= "weekdays" >Days:</label>
-      <select id="weekdays" class= "seven columns">
-        <option value="1">SUN</option>
-        <option value="2">MON</option>
-        <option value="3">TUE</option>
-        <option value="4">WED</option>
-        <option value="5">THU</option>
-        <option value="6">FRI</option>
-        <option value="7">SAT</option>
-      </select>
-    </div>
-    <div class = "five columns">
-      <label for= "start_time" >From:</label>
-      <input type="time" class= "ten columns" id= "start_time">
-    </div>
-    <div class = "five columns">
-      <label for= "end_time" >To:</label>
-      <input type="time" class= "ten columns" id= "end_time">
-    </div>
-    <button class = "button-primary center-big">+</button>
-  </div>
+<body class = "schedule">
+  <h1>Hello, username</h1>
+  <h2>Here's your weekly schedule</h2>
+  <table class="u-full-width">
+    <thead>
+      <tr>
+        <th>MON</th>
+        <th>TUE</th>
+        <th>WED</th>
+        <th>THU</th>
+        <th>FRI</th>
+        <th>SAT</th>
+        <th>SUN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class = "monday">Examen de Matematicas computacionales</td>
+        <td class = "tuesday">Entrega del PoliFlower</td>
+        <td class = "wednesday">Ultimo día</td>
+      </tr>
+      <tr>
+        <td class = "monday">Entrega de Kikins</td>
+      </tr>
+      <tr>
+        <td class = "monday">Entrega de otra mierda</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--<div class = "row">
+    <div class = "one column" id= "Monday"><h3>MON</h3></div>
+    <div class = "one column" id= "Tuesday"><h3>TUE</h3></div>
+    <div class = "one column" id= "Wednesday"><h3>WED</h3></div>
+    <div class = "one column" id= "Thursday"><h3>THU</h3></div>
+    <div class = "one column" id= "Friday"><h3>FRI</h3></div>
+    <div class = "one column" id= "Saturday"><h3>SAT</h3></div>
+    <div class = "one column" id= "Sunday"><h3>SUN</h3></div>
+  </div>-->
+
 </body>
 </html>
