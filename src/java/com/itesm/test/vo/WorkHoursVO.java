@@ -1,14 +1,17 @@
 package com.itesm.test.vo;
 
 import java.io.Serializable;
+import java.sql.Date;
 import java.sql.Time;
 import java.sql.Timestamp;
 
-
 /**
- * Created by mario on 11/18/2015.
+ * Created by mario on 11/21/2015.
  */
-public class AgendaVO implements Serializable {
+public class WorkHoursVO implements Serializable {
+
+    private String id;
+
     public String getId() {
         return id;
     }
@@ -16,6 +19,8 @@ public class AgendaVO implements Serializable {
     public void setId(String id) {
         this.id = id;
     }
+
+
 
     public Timestamp getStart_date() {
         return start_date;
@@ -33,23 +38,32 @@ public class AgendaVO implements Serializable {
         this.end_date = end_date;
     }
 
-    public Time getHours_left() {
-        return hours_left;
+    public String getAgenda_id() {
+        return agenda_id;
     }
 
-    public void setHours_left(Time hours_left) {
-        this.hours_left = hours_left;
+    public void setAgenda_id(String agenda_id) {
+        this.agenda_id = agenda_id;
     }
 
-    private String id;
+    public Date getDay() {
+        return day;
+    }
+
+    public void setDay(Date day) {
+        this.day = day;
+    }
+
+    private Date day;
     private Timestamp start_date;
     private Timestamp end_date;
-    private Time hours_left;
+    private String agenda_id;
+
 
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof AgendaVO){
-            return this.id.equals(((AgendaVO) obj).id);
+            return this.id.equals(((WorkHoursVO) obj).id);
         }else{
             return false;
         }
