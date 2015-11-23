@@ -2,52 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53295017-15ed-4eb3-810a-2d85e225c8e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/dao/TaskDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/dao/WorkHoursDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/manager/TaskManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/manager/WorkHoursManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/LogInServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/SignInServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/vo/WorkHoursVO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/plus.svg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/index.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_index.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_index.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_tasks.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_tasks.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_welcome.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_welcome.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_workinghours.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_workinghours.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/main.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/main.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_index.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_index.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_schedule.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_schedule.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_tasks.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_tasks.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_welcome.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_welcome.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_workinghours.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_workinghours.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/main.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/main.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/_index.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/_index.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/_welcome.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/_welcome.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/_workinghours.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/_workinghours.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/index.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/index.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/main.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/main.sassc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/_index.sass" afterPath="$PROJECT_DIR$/web/css/_index.sass" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/_schedule.sass" afterPath="$PROJECT_DIR$/web/css/_schedule.sass" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/_tasks.sass" afterPath="$PROJECT_DIR$/web/css/_tasks.sass" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/_welcome.sass" afterPath="$PROJECT_DIR$/web/css/_welcome.sass" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/_workinghours.sass" afterPath="$PROJECT_DIR$/web/css/_workinghours.sass" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/main.css.map" afterPath="$PROJECT_DIR$/web/css/main.css.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/main.sass" afterPath="$PROJECT_DIR$/web/css/main.sass" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/normalize.css" afterPath="$PROJECT_DIR$/web/css/normalize.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/skeleton.css" afterPath="$PROJECT_DIR$/web/css/skeleton.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/index.html" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/schedule.html" afterPath="$PROJECT_DIR$/web/schedule.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/tasks.html" afterPath="$PROJECT_DIR$/web/tasks.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/welcome.html" afterPath="$PROJECT_DIR$/web/welcome.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/dao/AgendaDAO.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/dao/AgendaDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/dao/PersonaDAO.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/dao/PersonaDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/manager/PersonaManager.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/manager/PersonaManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/vo/AgendaVO.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/vo/AgendaVO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java" />
     </list>
     <ignored path="myFirstApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="schedulizer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="schedulizer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.125">
+            <state vertical-scroll-proportion="0.0">
               <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -88,22 +43,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskVO.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TaskVO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.14285715">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
               <folding>
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#550#551#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#655#656#0" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#1558#1559#0" expanded="true" />
-                <element signature="e#1589#1590#0" expanded="true" />
-                <element signature="e#1635#1636#0" expanded="true" />
-                <element signature="e#1675#1676#0" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#333#334#0" expanded="true" />
+                <element signature="e#361#362#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
+                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#449#450#0" expanded="true" />
+                <element signature="e#479#480#0" expanded="true" />
+                <element signature="e#519#520#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+                <element signature="e#613#614#0" expanded="true" />
+                <element signature="e#657#658#0" expanded="true" />
+                <element signature="e#923#924#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#1005#1006#0" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="e#1077#1078#0" expanded="true" />
+                <element signature="e#1108#1109#0" expanded="true" />
+                <element signature="e#1153#1154#0" expanded="true" />
+                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#1233#1234#0" expanded="true" />
+                <element signature="e#1269#1270#0" expanded="true" />
+                <element signature="e#1327#1328#0" expanded="true" />
+                <element signature="e#1377#1378#0" expanded="true" />
+                <element signature="e#1559#1560#0" expanded="true" />
+                <element signature="e#1590#1591#0" expanded="true" />
+                <element signature="e#1636#1637#0" expanded="true" />
+                <element signature="e#1676#1677#0" expanded="true" />
                 <element signature="method#equals#0;class#TaskVO#0" expanded="false" />
               </folding>
             </state>
@@ -148,8 +121,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java" />
         <option value="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java" />
+        <option value="$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java" />
       </list>
     </option>
   </component>
@@ -274,10 +247,6 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -301,29 +270,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="servlets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myFirstApplication" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScheduleWebApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="manager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1000,12 +947,12 @@
       <created>1448156351640</created>
       <option name="number" value="Default" />
       <updated>1448156351640</updated>
-      <workItem from="1448159298417" duration="25476000" />
+      <workItem from="1448159298417" duration="25848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25476000" />
+    <option name="totallyTimeSpent" value="25848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="43" width="1260" height="669" extended-state="0" />
@@ -1019,7 +966,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18890814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2235702" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24958949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1067,29 +1014,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#517#518#0" expanded="true" />
-            <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#1558#1559#0" expanded="true" />
-            <element signature="e#1589#1590#0" expanded="true" />
-            <element signature="e#1635#1636#0" expanded="true" />
-            <element signature="e#1675#1676#0" expanded="true" />
-            <element signature="method#equals#0;class#TaskVO#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.125">
+        <state vertical-scroll-proportion="0.0">
           <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1099,6 +1026,44 @@
             <element signature="e#2831#2850#0" expanded="true" />
             <element signature="e#3510#3518#0" expanded="true" />
             <element signature="e#4111#4119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14285715">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#1005#1006#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1108#1109#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+            <element signature="e#1269#1270#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+            <element signature="e#1377#1378#0" expanded="true" />
+            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="e#1590#1591#0" expanded="true" />
+            <element signature="e#1636#1637#0" expanded="true" />
+            <element signature="e#1676#1677#0" expanded="true" />
+            <element signature="method#equals#0;class#TaskVO#0" expanded="false" />
           </folding>
         </state>
       </provider>

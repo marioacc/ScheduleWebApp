@@ -2,6 +2,7 @@ package com.itesm.test.vo;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.sql.Time;
 
 import java.util.Date;
 
