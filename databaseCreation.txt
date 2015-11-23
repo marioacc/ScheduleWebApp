@@ -1,0 +1,43 @@
+create database DB;
+use DB;
+
+CREATE TABLE agenda
+(
+id int NOT NULL PRIMARY KEY auto_increment,
+start_date TIMESTAMP ,
+end_date TIMESTAMP ,
+hours_left TIME
+);
+
+CREATE TABLE persona
+(
+id int NOT NULL PRIMARY KEY auto_increment,
+nombre varchar(30),
+password varchar(32),
+mail varchar(30),
+agenda_id int ,
+FOREIGN KEY (agenda_id) REFERENCES agenda(id)  ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE work_hours
+(
+  id int NOT NULL PRIMARY KEY auto_increment,
+  day int,
+  start_time TIME ,
+  end_time TIME ,
+  agenda_id int ,
+  FOREIGN KEY (agenda_id) REFERENCES agenda(id)  ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE task
+(
+  id int NOT NULL PRIMARY KEY auto_increment,
+  day int ,
+  start_time TIME ,
+  end_time TIME ,
+  priority int ,
+  duration int ,
+  work_hours_id int ,
+  description varchar(30),
+  FOREIGN KEY (work_hours_id) REFERENCES work_hours(id) ON DELETE CASCADE ON UPDATE CASCADE
+);
