@@ -2,21 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b48dfcf-659c-41c7-874a-ce26e7c19196" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/servlets/ActualizarFechaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/servlets/ActualizarPersonaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/servlets/CrearPersonaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/servlets/EditarPersonaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/servlets/EliminarPersonaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/servlets/ListarPersonaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/servlets/MostrarPersonaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/servlets/ActualizarFechaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/servlets/ActualizarPersonaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/servlets/CrearPersonaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/servlets/EditarPersonaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/servlets/EliminarPersonaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/servlets/ListarPersonaServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/servlets/MostrarPersonaServlet.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/dao/TaskDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/dao/TaskDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/dao/WorkHoursDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/dao/WorkHoursDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/manager/TaskManager.class" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/manager/TaskManager.class" />
@@ -29,7 +14,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/manager/WorkHoursManager.class" afterPath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/manager/WorkHoursManager.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/vo/TaskVO.class" afterPath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/vo/TaskVO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/vo/WorkHoursVO.class" afterPath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/vo/WorkHoursVO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/css/main.css" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/schedule.jsp" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/schedule.jsp" />
@@ -1161,7 +1145,7 @@
       <workItem from="1448220553523" duration="16594000" />
       <workItem from="1448250776420" duration="25610000" />
       <workItem from="1448276620205" duration="281000" />
-      <workItem from="1448277488038" duration="11559000" />
+      <workItem from="1448277488038" duration="11573000" />
     </task>
     <task id="LOCAL-00001" summary="The project up to date with the agenda VO,DAO y Manager added">
       <created>1448063389851</created>
@@ -1199,11 +1183,17 @@
       <option name="project" value="LOCAL" />
       <updated>1448289640900</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="servelt for task section is working">
+      <created>1448298784830</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1448298784830</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81451000" />
+    <option name="totallyTimeSpent" value="81465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
