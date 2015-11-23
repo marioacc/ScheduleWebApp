@@ -35,9 +35,7 @@ public class ActualizarPersonaServlet extends HttpServlet {
        PersonaVO personaV = new PersonaVO();
        personaV.setId(personaId);
        personaV.setNombre(nombre);
-       personaV.setApellido_paterno(apellidoPaterno);
-       personaV.setApellido_materno(apellidoMaterno);
-       personaV.setAlias(alias);
+
        
        if(personaId != null && personaId.trim().length() > 0){
        persona.actualizar(personaV);    

@@ -62,7 +62,7 @@ public class PersonaDAO {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("SELECT id, nombre, "
             + "apellido_paterno, apellido_materno, alias FROM persona "  
             + "WHERE id="+givenId);    
@@ -119,7 +119,7 @@ public class PersonaDAO {
             if(null != persona){
             
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("UPDATE persona " +
                      "SET nombre=?, password=?, mail=?, agenda_id=? " + "WHERE id=?");
             pstmt.setString(1, persona.getNombre());
@@ -148,14 +148,14 @@ public class PersonaDAO {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
   
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("INSERT INTO persona (nombre, password, mail,"
-                    + "agenda_id)" + "VALUES (?, ?, ?, ?, ?)");
+                    + "agenda_id)" + " VALUES (?, ?, ?, ?)");
             pstmt.setString(1, nombre);
             pstmt.setString(2, password);
             pstmt.setString(3, mail);
             pstmt.setString(4, agenda_id);
-            
+            System.out.println(pstmt.toString());
             pstmt.executeUpdate();
             pstmt.close();
             

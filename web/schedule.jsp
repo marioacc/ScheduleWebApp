@@ -30,7 +30,10 @@
 </head>
 <body class = "schedule">
   <h1>Hello, username</h1>
-  <h2>Here's your weekly schedule</h2>
+  <div>
+    <h2>Here's your weekly schedule</h2>
+    <img src="img/plus.svg">
+  </div>
   <table class="u-full-width">
     <thead>
       <tr>
