@@ -20,7 +20,7 @@ public class PersonaManager {
         PersonaDAO listaPersonas = new PersonaDAO();
         return listaPersonas.findAll();
     }
-    
+
     public PersonaVO consultar(final String idConsulta){
         PersonaDAO consultaPersona = new PersonaDAO();
         return consultaPersona.findById(idConsulta);

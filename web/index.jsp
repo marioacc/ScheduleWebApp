@@ -35,21 +35,27 @@
   <div class="row">
     <div class = "three columns">
       <h2>Log In</h2>
-      <label for="username">Username</label>
-      <input class= "eleven columns" type= "email" id="username">
-      <label for="password">Password</label>
-      <input class= "eleven columns" type="password" id="password">
-      <button class = "button-primary">Log In</button>
+      <form action="/login" method="post">
+        <label for="username">Username</label>
+        <input class= "eleven columns" type= "email" name="username" id="username">
+        <label for="password">Password</label>
+        <input class= "eleven columns" name="password" type="password" id="password">
+        <button class = "button-primary" type="submit" >Log In</button>
+
+      </form>
     </div>
     <div class = "nine columns">
       <h2>Sign Up</h2>
-      <label for="username">Username</label>
-      <input class= "eleven columns" type= "email" id="username">
-      <label for="password">Password</label>
-      <input class= "eleven columns" type="password" id="password">
-      <label for="email">Email</label>
-      <input class= "eleven columns" type="email" placeholder="yourmail@nigga.com" id="password">
-      <button class = "button-primary">Log In</button>
+      <form action="/signin" method="post">
+
+        <label for="username">Username</label>
+        <input class= "eleven columns" type= "text" name="username" id="username">
+        <label for="password">Password</label>
+        <input class= "eleven columns" type="password" name="password" id="password">
+        <label for="email">Email</label>
+        <input class= "eleven columns" type="email" placeholder="yourmail@nigga.com" name="email" id="password">
+        <button class = "button-primary" type="submit" >Sign In</button>
+      </form>
     </div>
   </div>
 

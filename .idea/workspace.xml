@@ -2,19 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53295017-15ed-4eb3-810a-2d85e225c8e5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/ActualizarFechaServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/ActualizarPersonaServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/CrearPersonaServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/EditarPersonaServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/EliminarPersonaServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/ListarPersonaServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/MostrarPersonaServlet.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_5_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_5_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_glassfish_web_javax_servlet_jsp_jstl_1_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_glassfish_web_javax_servlet_jsp_jstl_1_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_glassfish_web_jstl_impl_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_glassfish_web_jstl_impl_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/myFirstApplication.iml" afterPath="$PROJECT_DIR$/src/myFirstApplication.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/dao/TaskDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/dao/WorkHoursDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/manager/TaskManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/manager/WorkHoursManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/LogInServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/SignInServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/vo/WorkHoursVO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/plus.svg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/index.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_index.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_index.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_tasks.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_tasks.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_welcome.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_welcome.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_workinghours.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/_workinghours.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/main.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/32ed8cf15ec8e4175ad29b9cbded34a6b508015b/main.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_index.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_index.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_schedule.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_schedule.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_tasks.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_tasks.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_welcome.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_welcome.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_workinghours.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/_workinghours.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/main.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/45dba514ffb89b38f34e48a00aab183776f29987/main.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/_index.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/_index.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/_welcome.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/_welcome.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/_workinghours.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/_workinghours.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/index.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/index.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/main.sassc" afterPath="$PROJECT_DIR$/web/css/.sass-cache/9392bee3f7d2e68848d65944721aafae0acc6479/main.sassc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/_index.sass" afterPath="$PROJECT_DIR$/web/css/_index.sass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/_schedule.sass" afterPath="$PROJECT_DIR$/web/css/_schedule.sass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/_tasks.sass" afterPath="$PROJECT_DIR$/web/css/_tasks.sass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/_welcome.sass" afterPath="$PROJECT_DIR$/web/css/_welcome.sass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/_workinghours.sass" afterPath="$PROJECT_DIR$/web/css/_workinghours.sass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/main.css.map" afterPath="$PROJECT_DIR$/web/css/main.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/main.sass" afterPath="$PROJECT_DIR$/web/css/main.sass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/normalize.css" afterPath="$PROJECT_DIR$/web/css/normalize.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/css/skeleton.css" afterPath="$PROJECT_DIR$/web/css/skeleton.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/index.html" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/schedule.html" afterPath="$PROJECT_DIR$/web/schedule.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/tasks.html" afterPath="$PROJECT_DIR$/web/tasks.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/templates/welcome.html" afterPath="$PROJECT_DIR$/web/welcome.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/dao/AgendaDAO.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/dao/AgendaDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/dao/PersonaDAO.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/dao/PersonaDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/manager/PersonaManager.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/manager/PersonaManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/vo/AgendaVO.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/vo/AgendaVO.java" />
     </list>
     <ignored path="myFirstApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,12 +73,38 @@
       <file leaf-file-name="schedulizer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66573817">
-              <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+            <state vertical-scroll-proportion="1.125">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1512#1513#0" expanded="true" />
-                <element signature="e#1550#1551#0" expanded="true" />
+                <element signature="e#1266#1274#0" expanded="true" />
+                <element signature="e#1320#1328#0" expanded="true" />
+                <element signature="e#2754#2762#0" expanded="true" />
+                <element signature="e#2831#2850#0" expanded="true" />
+                <element signature="e#3510#3518#0" expanded="true" />
+                <element signature="e#4111#4119#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskVO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding>
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
+                <element signature="e#655#656#0" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+                <element signature="e#952#953#0" expanded="true" />
+                <element signature="e#1558#1559#0" expanded="true" />
+                <element signature="e#1589#1590#0" expanded="true" />
+                <element signature="e#1635#1636#0" expanded="true" />
+                <element signature="e#1675#1676#0" expanded="true" />
+                <element signature="method#equals#0;class#TaskVO#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -55,14 +114,15 @@
         <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/dao/AgendaDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="107" column="8" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="60" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
-                <element signature="e#4188#4198#0" expanded="true" />
-                <marker date="1448136471000" expanded="true" signature="785:900" placeholder="SELECT id, s..agenda..." />
-                <marker date="1448136471000" expanded="true" signature="2190:2289" placeholder="INSERT INTO agenda..." />
-                <marker date="1448136471000" expanded="true" signature="3641:3669" placeholder="DELETE FROM ..." />
-                <marker date="1448136471000" expanded="true" signature="4477:4593" placeholder="SELECT id, s..agendaORDER..." />
-                <marker date="1448136471000" expanded="true" signature="5800:5915" placeholder="UPDATE perso..." />
+                <element signature="imports" expanded="true" />
+                <element signature="e#4069#4079#0" expanded="true" />
+                <marker date="1448238924000" expanded="true" signature="654:769" placeholder="SELECT id, s..agenda..." />
+                <marker date="1448238924000" expanded="true" signature="2067:2166" placeholder="INSERT INTO agenda..." />
+                <marker date="1448238924000" expanded="true" signature="3522:3550" placeholder="DELETE FROM ..." />
+                <marker date="1448238924000" expanded="true" signature="4358:4474" placeholder="SELECT id, s..agendaORDER..." />
+                <marker date="1448238924000" expanded="true" signature="5685:5800" placeholder="UPDATE perso..." />
               </folding>
             </state>
           </provider>
@@ -88,6 +148,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java" />
         <option value="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java" />
       </list>
     </option>
@@ -174,6 +235,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myFirstApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ScheduleWebApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -226,7 +301,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Schedulizer" />
+              <option name="myItemId" value="servlets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -249,32 +324,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myFirstApplication" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ScheduleWebApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -951,12 +1000,12 @@
       <created>1448156351640</created>
       <option name="number" value="Default" />
       <updated>1448156351640</updated>
-      <workItem from="1448159298417" duration="5894000" />
+      <workItem from="1448159298417" duration="25476000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5894000" />
+    <option name="totallyTimeSpent" value="25476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="43" width="1260" height="669" extended-state="0" />
@@ -970,7 +1019,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32928944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18890814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24958949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -992,7 +1041,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1003,26 +1054,51 @@
     <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/dao/AgendaDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="8" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="60" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="e#4188#4198#0" expanded="true" />
-            <marker date="1448136471000" expanded="true" signature="785:900" placeholder="SELECT id, s..agenda..." />
-            <marker date="1448136471000" expanded="true" signature="2190:2289" placeholder="INSERT INTO agenda..." />
-            <marker date="1448136471000" expanded="true" signature="3641:3669" placeholder="DELETE FROM ..." />
-            <marker date="1448136471000" expanded="true" signature="4477:4593" placeholder="SELECT id, s..agendaORDER..." />
-            <marker date="1448136471000" expanded="true" signature="5800:5915" placeholder="UPDATE perso..." />
+            <element signature="imports" expanded="true" />
+            <element signature="e#4069#4079#0" expanded="true" />
+            <marker date="1448238924000" expanded="true" signature="654:769" placeholder="SELECT id, s..agenda..." />
+            <marker date="1448238924000" expanded="true" signature="2067:2166" placeholder="INSERT INTO agenda..." />
+            <marker date="1448238924000" expanded="true" signature="3522:3550" placeholder="DELETE FROM ..." />
+            <marker date="1448238924000" expanded="true" signature="4358:4474" placeholder="SELECT id, s..agendaORDER..." />
+            <marker date="1448238924000" expanded="true" signature="5685:5800" placeholder="UPDATE perso..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#1558#1559#0" expanded="true" />
+            <element signature="e#1589#1590#0" expanded="true" />
+            <element signature="e#1635#1636#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="method#equals#0;class#TaskVO#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66573817">
-          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+        <state vertical-scroll-proportion="1.125">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-            <element signature="e#1550#1551#0" expanded="true" />
+            <element signature="e#1266#1274#0" expanded="true" />
+            <element signature="e#1320#1328#0" expanded="true" />
+            <element signature="e#2754#2762#0" expanded="true" />
+            <element signature="e#2831#2850#0" expanded="true" />
+            <element signature="e#3510#3518#0" expanded="true" />
+            <element signature="e#4111#4119#0" expanded="true" />
           </folding>
         </state>
       </provider>
