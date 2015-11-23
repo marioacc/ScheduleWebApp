@@ -37,9 +37,9 @@ public class PersonaManager {
         dao.update(persona);
     }
     
-    public void agregar(final PersonaVO persona){
+    public PersonaVO agregar(final PersonaVO persona){
          PersonaDAO dao = new PersonaDAO();
-         dao.insert(persona.getNombre(), persona.getPassword(),
+         return dao.insert(persona.getNombre(), persona.getPassword(),
                  persona.getMail(), persona.getAgenda_id());
     }
     

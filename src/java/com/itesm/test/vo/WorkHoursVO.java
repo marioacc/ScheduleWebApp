@@ -3,6 +3,7 @@ package com.itesm.test.vo;
 import java.io.Serializable;
 import java.sql.Time;
 import java.sql.Time;
+import java.util.Date;
 
 /**
  * Created by mario on 11/21/2015.
@@ -21,13 +22,7 @@ public class WorkHoursVO implements Serializable {
 
 
 
-    public Time getStart_date() {
-        return start_date;
-    }
 
-    public void setStart_date(Time start_date) {
-        this.start_date = start_date;
-    }
 
     public Time getEnd_date() {
         return end_date;
@@ -54,6 +49,16 @@ public class WorkHoursVO implements Serializable {
     }
 
     private int day;
+
+
+    public Time getStart_date() {
+        return start_date;
+    }
+
+    public void setStart_date(Time start_date) {
+        this.start_date = start_date;
+    }
+
     private Time start_date;
     private Time end_date;
     private String agenda_id;
@@ -70,7 +75,7 @@ public class WorkHoursVO implements Serializable {
 
     @Override
     public String toString() {
-        return this.id+" "+this.start_date+" "+this.end_date;
+        return ""+this.id+" "+this.day+" "+" "+this.start_date+" "+this.end_date+" "+this.agenda_id;
     }
 
     @Override

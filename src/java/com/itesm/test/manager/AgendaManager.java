@@ -31,9 +31,9 @@ public class AgendaManager {
         dao.update(persona);
     }
 
-    public void agregar(final AgendaVO agenda){
+    public AgendaVO agregar(final AgendaVO agenda){
         AgendaDAO dao = new AgendaDAO();
-        dao.insert(agenda.getStart_date(), agenda.getEnd_date(),
+        return dao.insert(agenda.getStart_date(), agenda.getEnd_date(),
                 agenda.getHours_left());
     }
 

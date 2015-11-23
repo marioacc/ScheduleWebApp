@@ -5,7 +5,9 @@
  */
 package com.itesm.test.servlets;
 
+import com.itesm.test.manager.AgendaManager;
 import com.itesm.test.manager.PersonaManager;
+import com.itesm.test.vo.AgendaVO;
 import com.itesm.test.vo.PersonaVO;
 
 import javax.servlet.RequestDispatcher;
@@ -43,7 +45,11 @@ public class SignInServlet extends HttpServlet {
                 rd.forward(request, response);
             }
         }
-        personaManager.agregar(personaVO);
+        AgendaVO ag= new AgendaVO();
+        AgendaManager agendaManager = new AgendaManager();
+        AgendaVO agenda=agendaManager.agregar(ag);
+        personaVO.setAgenda_id(agenda.getId());
+        setSession(personaManager.agregar(personaVO),request);
         RequestDispatcher rd = getServletContext().getRequestDispatcher("/welcome.jsp");
         rd.forward(request, response);
 

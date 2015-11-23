@@ -34,7 +34,7 @@
     <div class="twelve columns">
       <h2 class="seven columns">Here's your weekly schedule</h2>
       <a
-              href="/workhours.html">
+              href="/workhours">
         <img src="img/plus.svg" class="offset-by-two three columns" style="max-width: 5%; fill: #08A866" >
       </a>
     </div>

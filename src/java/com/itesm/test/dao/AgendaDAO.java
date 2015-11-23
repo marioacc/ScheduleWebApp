@@ -52,7 +52,7 @@ public class AgendaDAO {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
 
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("INSERT INTO agenda (start_date, end_date,"
                     + " hours_left)" + "VALUES (?, ?, ?)");
             pstmt.setTimestamp(1, start_date);
@@ -61,7 +61,7 @@ public class AgendaDAO {
             pstmt.executeUpdate();
             pstmt.close();
 
-            pstmt = conn.prepareStatement("SELECT_LAST_INSERT_ID()");
+            pstmt = conn.prepareStatement("SELECT LAST_INSERT_ID()");
             ResultSet rs = pstmt.executeQuery();
             if(rs.next()){
                 persona = new AgendaVO();
@@ -74,7 +74,6 @@ public class AgendaDAO {
             rs.close();
             pstmt.close();
             conn.close();
-
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException cnfe) {
             Logger.getLogger(AgendaDAO.class.getName()).log(Level.SEVERE, null, cnfe);
         }
@@ -142,7 +141,7 @@ public class AgendaDAO {
             if(null != agenda){
 
                 Connection conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                        "jdbc:mysql://localhost/DB?user=root&password=admin");
                 PreparedStatement pstmt = conn.prepareStatement("UPDATE persona " +
                         "SET start_date=?, end_date=?, hours_left=?, agenda_id=? " + "WHERE id=?");
                 pstmt.setTimestamp(1, agenda.getStart_date());

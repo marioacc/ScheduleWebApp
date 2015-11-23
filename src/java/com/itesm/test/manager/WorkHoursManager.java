@@ -39,6 +39,7 @@ public class WorkHoursManager {
 
     public void agregar(final WorkHoursVO workhours){
         WorkHoursDAO dao = new WorkHoursDAO();
+        System.out.println(workhours.toString());
         dao.insert(workhours.getDay(), workhours.getStart_date(),
                 workhours.getEnd_date(), workhours.getAgenda_id());
     }

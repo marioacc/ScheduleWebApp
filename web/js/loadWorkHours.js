@@ -1,12 +1,14 @@
 /**
  * Created by mario on 11/22/2015.
  */
-var workHours=[];
+var workHours={
+    hours:[]
+};
 function addWorkHour(){
     var start_time=$("#start_time").val();
     var end_time=$("#end_time").val();
     var day= $("#weekdays").val();
-    workHours.push({
+    workHours.hours.push({
        "day":day,
         "start_time":start_time,
         "end_time":end_time
@@ -24,10 +26,13 @@ function newWorkHours(){
 }
 
 function sendWorkHours(){
+    console.log(workHours);
     $.ajax({
         type: "GET",
-        url: "/tasks",
-        data: workHours,
-        success: success
+        url: "/neworkhours",
+        data: {"workHours":JSON.stringify(workHours)},
+        success: function (data){
+            window.location= "/tasks.jsp";
+        }
     });
 }

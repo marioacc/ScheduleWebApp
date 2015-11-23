@@ -51,7 +51,7 @@ public class WorkHoursDAO {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("SELECT id, nombre, "
                     + "apellido_paterno, apellido_materno, alias FROM workhours "
                     + "WHERE agenda_id="+givenId);
@@ -86,7 +86,7 @@ public class WorkHoursDAO {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("SELECT id, nombre, "
                     + "apellido_paterno, apellido_materno, alias FROM workhours "
                     + "WHERE id="+givenId);
@@ -143,7 +143,7 @@ public class WorkHoursDAO {
             if(null != workhours){
 
                 Connection conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                        "jdbc:mysql://localhost/DB?user=root&password=admin");
                 PreparedStatement pstmt = conn.prepareStatement("UPDATE work_hours " +
                         "SET day=?, start_date=?, end_date=?, agenda_id=? " + "WHERE id=?");
                 pstmt.setInt(1, workhours.getDay());
@@ -173,9 +173,9 @@ public class WorkHoursDAO {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
 
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
-            PreparedStatement pstmt = conn.prepareStatement("INSERT INTO workhours (day, start_date, end_date,"
-                    + "agenda_id)" + "VALUES (?, ?, ?, ?, ?)");
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
+            PreparedStatement pstmt = conn.prepareStatement("INSERT INTO work_hours (day, start_time, end_time,"
+                    + "agenda_id)" + "VALUES (?, ?, ?, ?)");
             pstmt.setInt(1, day);
             pstmt.setTime(2, start_date);
             pstmt.setTime(3, end_date);
@@ -184,7 +184,7 @@ public class WorkHoursDAO {
             pstmt.executeUpdate();
             pstmt.close();
 
-            pstmt = conn.prepareStatement("SELECT_LAST_INSERT_ID()");
+            pstmt = conn.prepareStatement("SELECT LAST_INSERT_ID()");
             ResultSet rs = pstmt.executeQuery();
             if(rs.next()){
                 workhours = new WorkHoursVO();

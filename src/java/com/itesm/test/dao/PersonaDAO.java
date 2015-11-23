@@ -159,7 +159,7 @@ public class PersonaDAO {
             pstmt.executeUpdate();
             pstmt.close();
             
-            pstmt = conn.prepareStatement("SELECT_LAST_INSERT_ID()");
+            pstmt = conn.prepareStatement("SELECT LAST_INSERT_ID()");
             ResultSet rs = pstmt.executeQuery();
             if(rs.next()){
                 persona = new PersonaVO();
