@@ -2,6 +2,7 @@ package com.itesm.test.vo;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.sql.Time;
 
 import java.util.Date;
 
@@ -34,8 +35,13 @@ public class TaskVO implements Serializable{
         return start_date;
     }
 
-    public void setStart_date(Timestamp start_date) {
-        this.start_date = start_date;
+    private int convert_to_milliseconds(int hours, int min){
+        return ((hours*60)+min)*1000;
+    }
+
+    public void setStart_date() {
+        int milli_duration =convert_to_milliseconds(this.duration.getHours(), this.getDuration().getMinutes());
+        this.start_date = new Timestamp(end_date.getTime()-milli_duration);
     }
 
     public Timestamp getEnd_date() {
@@ -67,6 +73,36 @@ public class TaskVO implements Serializable{
     private Timestamp end_date;
     private int priority;
     private String work_hours_id;
+    private String description;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+
+    public Time getDuration() {
+        return duration;
+    }
+
+    public void setDuration(Time duration) {
+        this.duration = duration;
+    }
+
+    private Time duration;
+
+    public String getAgenda_id() {
+        return agenda_id;
+    }
+
+    public void setAgenda_id(String agenda_id) {
+        this.agenda_id = agenda_id;
+    }
+
+    private String agenda_id;
 
     @Override
     public boolean equals(Object obj) {

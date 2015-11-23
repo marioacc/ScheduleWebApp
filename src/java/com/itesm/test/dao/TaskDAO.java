@@ -20,7 +20,7 @@ public class TaskDAO {
             Connection conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("SELECT id, day, start_time"
-                    + ", end_time, priority, work_hours_id FROM task "
+                    + ", end_time, priority, work_hours_id, description, agenda_id FROM task "
                     + "ORDER BY id");
             ResultSet rs = pstmt.executeQuery();
 
@@ -28,10 +28,12 @@ public class TaskDAO {
                 TaskVO task = new TaskVO();
                 task.setId(rs.getString(1));
                 task.setDay(rs.getInt(2));
-                task.setStart_date(rs.getTimestamp(3));
                 task.setEnd_date(rs.getTimestamp(4));
                 task.setPriority(rs.getInt(5));
                 task.setWork_hours_id(rs.getString(6));
+                task.setDescription(rs.getString(7));
+                task.setAgenda_id(rs.getString(8));
+                task.setStart_date();
 
                 tasks.add(task);
             }
@@ -55,9 +57,9 @@ public class TaskDAO {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
-            PreparedStatement pstmt = conn.prepareStatement("SELECT id, nombre, "
-                    + "apellido_paterno, apellido_materno, alias FROM task "
-                    + "WHERE id="+givenId);
+            PreparedStatement pstmt = conn.prepareStatement("SELECT id, day, start_time"
+                    + ", end_time, priority, work_hours_id, description, agenda_id FROM task "
+                    + "WHERE id=" + givenId);
             ResultSet rs = pstmt.executeQuery();
 
             //if when we only wait for one
@@ -65,9 +67,12 @@ public class TaskDAO {
                 tasksPorId = new TaskVO();
                 tasksPorId.setId(rs.getString(1));
                 tasksPorId.setDay(rs.getInt(2));
-                tasksPorId.setStart_date(rs.getTimestamp(3));
                 tasksPorId.setEnd_date(rs.getTimestamp(4));
                 tasksPorId.setPriority(rs.getInt(5));
+                tasksPorId.setWork_hours_id(rs.getString(6));
+                tasksPorId.setDescription(rs.getString(7));
+                tasksPorId.setAgenda_id(rs.getString(8));
+                tasksPorId.setStart_date();
 
             }
 
@@ -82,6 +87,80 @@ public class TaskDAO {
             Logger.getLogger(TaskDAO.class.getName()).log(Level.SEVERE, null, sqle);
         }
         return tasksPorId;
+    }
+    public List<TaskVO> findByWorkhoursId (String givenId){
+        List<TaskVO> tasks = new ArrayList<TaskVO>();
+        try {
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            Connection conn = DriverManager.getConnection(
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
+            PreparedStatement pstmt = conn.prepareStatement("SELECT id, day, start_time"
+                    + ", end_time, priority, work_hours_id,description,agenda_id FROM task "
+                    + "WHERE work_hours_id=" + givenId);
+            ResultSet rs = pstmt.executeQuery();
+
+            while(rs.next()){
+                TaskVO task = new TaskVO();
+                task.setId(rs.getString(1));
+                task.setDay(rs.getInt(2));
+                task.setEnd_date(rs.getTimestamp(4));
+                task.setPriority(rs.getInt(5));
+                task.setWork_hours_id(rs.getString(6));
+                task.setDescription(rs.getString(7));
+                task.setAgenda_id(rs.getString(8));
+                task.setStart_date();
+
+                tasks.add(task);
+            }
+
+            rs.close();
+            pstmt.close();
+            conn.close();
+
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException cnfe) {
+            Logger.getLogger(TaskDAO.class.getName()).log(Level.SEVERE, null, cnfe);
+        }
+        catch(SQLException sqle){
+            Logger.getLogger(TaskDAO.class.getName()).log(Level.SEVERE, null, sqle);
+        }
+        return tasks;
+    }
+    public List<TaskVO> findByAgenda(String givenId){
+        List<TaskVO> tasks = new ArrayList<TaskVO>();
+        try {
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
+            Connection conn = DriverManager.getConnection(
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
+            PreparedStatement pstmt = conn.prepareStatement("SELECT id, day, start_time"
+                    + ", end_time, priority, work_hours_id,description,agenda_id FROM task "
+                    + "WHERE agenda_id=" + givenId);
+            ResultSet rs = pstmt.executeQuery();
+
+            while(rs.next()){
+                TaskVO task = new TaskVO();
+                task.setId(rs.getString(1));
+                task.setDay(rs.getInt(2));
+                task.setEnd_date(rs.getTimestamp(4));
+                task.setPriority(rs.getInt(5));
+                task.setWork_hours_id(rs.getString(6));
+                task.setDescription(rs.getString(7));
+                task.setAgenda_id(rs.getString(8));
+                task.setStart_date();
+
+                tasks.add(task);
+            }
+
+            rs.close();
+            pstmt.close();
+            conn.close();
+
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException cnfe) {
+            Logger.getLogger(TaskDAO.class.getName()).log(Level.SEVERE, null, cnfe);
+        }
+        catch(SQLException sqle){
+            Logger.getLogger(TaskDAO.class.getName()).log(Level.SEVERE, null, sqle);
+        }
+        return tasks;
     }
 
     public void delete(final String givenId){
@@ -159,7 +238,6 @@ public class TaskDAO {
                 task = new TaskVO();
                 task.setId(rs.getString(1));
                 task.setDay(day);
-                task.setStart_date(start_date);
                 task.setEnd_date(end_date);
                 task.setPriority(priority);
                 task.setWork_hours_id(work_hours_id);

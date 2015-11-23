@@ -63,6 +63,16 @@ public class WorkHoursVO implements Serializable {
     private Time end_date;
     private String agenda_id;
 
+    public Time getDuration() {
+        return duration;
+    }
+
+    public void setDuration(Time duration) {
+        this.duration = duration;
+    }
+
+    private Time duration;
+
 
     @Override
     public boolean equals(Object obj) {
