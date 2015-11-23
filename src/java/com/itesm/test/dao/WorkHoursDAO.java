@@ -25,9 +25,9 @@ public class WorkHoursDAO {
             while(rs.next()){
                 WorkHoursVO workhours = new WorkHoursVO();
                 workhours.setId(rs.getString(1));
-                workhours.setDay(rs.getDate(2));
-                workhours.setStart_date(rs.getTimestamp(3));
-                workhours.setEnd_date(rs.getTimestamp(4));
+                workhours.setDay(rs.getInt(2));
+                workhours.setStart_date(rs.getTime(3));
+                workhours.setEnd_date(rs.getTime(4));
                 workhours.setAgenda_id(rs.getString(5));
 
                 workhourss.add(workhours);
@@ -61,9 +61,9 @@ public class WorkHoursDAO {
             if(rs.next()){
                 WorkHoursVO workhours = new WorkHoursVO();
                 workhours.setId(rs.getString(1));
-                workhours.setDay(rs.getDate(2));
-                workhours.setStart_date(rs.getTimestamp(3));
-                workhours.setEnd_date(rs.getTimestamp(4));
+                workhours.setDay(rs.getInt(2));
+                workhours.setStart_date(rs.getTime(3));
+                workhours.setEnd_date(rs.getTime(4));
                 workhours.setAgenda_id(rs.getString(5));
 
             }
@@ -96,9 +96,9 @@ public class WorkHoursDAO {
             if(rs.next()){
                 WorkHoursVO workhours = new WorkHoursVO();
                 workhours.setId(rs.getString(1));
-                workhours.setDay(rs.getDate(2));
-                workhours.setStart_date(rs.getTimestamp(3));
-                workhours.setEnd_date(rs.getTimestamp(4));
+                workhours.setDay(rs.getInt(2));
+                workhours.setStart_date(rs.getTime(3));
+                workhours.setEnd_date(rs.getTime(4));
                 workhours.setAgenda_id(rs.getString(5));
 
             }
@@ -146,9 +146,9 @@ public class WorkHoursDAO {
                         "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
                 PreparedStatement pstmt = conn.prepareStatement("UPDATE work_hours " +
                         "SET day=?, start_date=?, end_date=?, agenda_id=? " + "WHERE id=?");
-                pstmt.setDate(1, workhours.getDay());
-                pstmt.setTimestamp(2, workhours.getStart_date());
-                pstmt.setTimestamp(3, workhours.getEnd_date());
+                pstmt.setInt(1, workhours.getDay());
+                pstmt.setTime(2, workhours.getStart_date());
+                pstmt.setTime(3, workhours.getEnd_date());
                 pstmt.setString(4, workhours.getAgenda_id());
                 pstmt.setString(5, workhours.getId());
 
@@ -167,7 +167,7 @@ public class WorkHoursDAO {
 
 
 
-    public WorkHoursVO insert(final Date day, final Timestamp start_date, final Timestamp end_date, final String agenda_id){
+    public WorkHoursVO insert(final int day, final Time start_date, final Time end_date, final String agenda_id){
         WorkHoursVO workhours = null;
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -176,9 +176,9 @@ public class WorkHoursDAO {
                     "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("INSERT INTO workhours (day, start_date, end_date,"
                     + "agenda_id)" + "VALUES (?, ?, ?, ?, ?)");
-            pstmt.setDate(1, day);
-            pstmt.setTimestamp(2, start_date);
-            pstmt.setTimestamp(3, end_date);
+            pstmt.setInt(1, day);
+            pstmt.setTime(2, start_date);
+            pstmt.setTime(3, end_date);
             pstmt.setString(4, agenda_id);
 
             pstmt.executeUpdate();

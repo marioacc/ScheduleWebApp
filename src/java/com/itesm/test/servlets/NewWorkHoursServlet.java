@@ -1,12 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.itesm.test.servlets;
 
 import com.itesm.test.manager.PersonaManager;
 import com.itesm.test.vo.PersonaVO;
+import com.sun.net.httpserver.HttpsServer;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -19,11 +15,10 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- *
- * @author Dave
+ * Created by mario on 11/22/2015.
  */
-@WebServlet(name = "LogInServlet", urlPatterns = {"/login"})
-public class LogInServlet extends HttpServlet {
+@WebServlet(name = "NewWorkHoursServlet", urlPatterns = {"/neworkhours"})
+public class NewWorkHoursServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String mail = request.getParameter("username");
@@ -56,4 +51,5 @@ public class LogInServlet extends HttpServlet {
         HttpSession httpSession = request.getSession();
         httpSession.setAttribute("persona",personaVO);
     }
+
 }

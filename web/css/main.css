@@ -31,6 +31,11 @@
   font-size: 3em;
   min-width: 10%;
   margin: 10% 45%; }
+.workinghours .center-big{
+  margin: 5%;
+  margin-left: 20%;
+
+}
 
 .schedule th {
   text-align: center;
