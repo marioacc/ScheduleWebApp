@@ -51,18 +51,7 @@
         <th>SUN</th>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td class = "monday">Examen de Matematicas computacionales</td>
-        <td class = "tuesday">Entrega del PoliFlower</td>
-        <td class = "wednesday">Ultimo día</td>
-      </tr>
-      <tr>
-        <td class = "monday">Entrega de Kikins</td>
-      </tr>
-      <tr>
-        <td class = "monday">Entrega de otra mierda</td>
-      </tr>
+    <tbody id="schedule">
     </tbody>
   </table>
   <!--<div class = "row">

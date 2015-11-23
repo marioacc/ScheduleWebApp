@@ -56,7 +56,7 @@ public class TaskDAO {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("SELECT id, day, start_time"
                     + ", end_time, priority, work_hours_id, description, agenda_id FROM task "
                     + "WHERE id=" + givenId);
@@ -190,7 +190,7 @@ public class TaskDAO {
             if(null != task){
 
                 Connection conn = DriverManager.getConnection(
-                        "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                        "jdbc:mysql://localhost/DB?user=root&password=admin");
                 PreparedStatement pstmt = conn.prepareStatement("UPDATE task " +
                         "SET day=?, start_time=?, end_time=?, priority=?, work_hours_id=? " + "WHERE id=?");
                 pstmt.setInt(1, task.getDay());
@@ -214,25 +214,25 @@ public class TaskDAO {
 
 
     public TaskVO insert(final int day, final Timestamp start_date, final Timestamp end_date,
-                         final int priority, final String work_hours_id){
+                         final int priority, final Time duration,final String description,final String work_hours_id){
         TaskVO task = null;
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
 
             Connection conn = DriverManager.getConnection(
-                    "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
+                    "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("INSERT INTO task (day, start_time, end_time,priority"
-                    + "work_hours_id)" + "VALUES (?, ?, ?, ?, ?)");
+                    + ",duration,work_hours_id)" + "VALUES (?, ?, ?, ?, ?,?)");
             pstmt.setInt(1, day);
             pstmt.setTimestamp(2, start_date);
             pstmt.setTimestamp(3, end_date);
             pstmt.setInt(4, priority);
-            pstmt.setString(5, work_hours_id);
-
+            pstmt.setTime(5, duration);
+            pstmt.setString(6,work_hours_id);
             pstmt.executeUpdate();
             pstmt.close();
 
-            pstmt = conn.prepareStatement("SELECT_LAST_INSERT_ID()");
+            pstmt = conn.prepareStatement("SELECT LAST_INSERT_ID()");
             ResultSet rs = pstmt.executeQuery();
             if(rs.next()){
                 task = new TaskVO();

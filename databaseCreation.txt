@@ -33,10 +33,10 @@ CREATE TABLE task
 (
   id int NOT NULL PRIMARY KEY auto_increment,
   day int ,
-  start_time TIME ,
-  end_time TIME ,
+  start_time TIMESTAMP ,
+  end_time TIMESTAMP ,
   priority int ,
-  duration int ,
+  duration TIME ,
   work_hours_id int ,
   description varchar(30),
   FOREIGN KEY (work_hours_id) REFERENCES work_hours(id) ON DELETE CASCADE ON UPDATE CASCADE

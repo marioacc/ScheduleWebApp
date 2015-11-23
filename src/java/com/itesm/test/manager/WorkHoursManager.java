@@ -21,7 +21,7 @@ public class WorkHoursManager {
         return consultaWorkHours.findById(idConsulta);
     }
 
-    public WorkHoursVO consultarPorAgenda(final String idConsulta){
+    public List<WorkHoursVO> consultarPorAgenda(final String idConsulta){
         WorkHoursDAO consultaWorkHours = new WorkHoursDAO();
         return consultaWorkHours.findByAgendaId(idConsulta);
     }

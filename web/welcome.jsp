@@ -29,5 +29,8 @@
   <body class = "welcome">
     <h1>Hello, username</h1>
     <p>You don't seem to have a schedule yet!</p>
+    <a href="/workhours.jsp">
     <button class = "button-primary center-big" href="/workhours.jsp" >Create a new schedule</button>
+
+    </a>
   </body>

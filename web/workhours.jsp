@@ -36,7 +36,7 @@
     <div id="workHourRow">
       <div class = "two columns">
         <label for= "weekdays" >Days:</label>
-        <select id="weekdays" class= "seven columns" >
+        <select id="weekdays" class= "seven columns" required="required">
           <option value="1" selected>SUN</option>
           <option value="2">MON</option>
           <option value="3">TUE</option>
@@ -48,11 +48,11 @@
       </div>
       <div class = "five columns">
         <label for= "start_time" >From:</label>
-        <input type="time" class= "ten columns" id= "start_time">
+        <input type="time" class= "ten columns" id= "start_time" required="required">
       </div>
       <div class = "five columns">
         <label for= "end_time" >To:</label>
-        <input type="time" class= "ten columns" id= "end_time">
+        <input type="time" class= "ten columns" id= "end_time" required="required">
       </div>
     </div>
   </div>

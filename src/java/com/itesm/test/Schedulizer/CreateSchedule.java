@@ -64,7 +64,7 @@ public class CreateSchedule {
 
     private Time calculate_dur(WorkHoursVO wh) {
         int start_date = convert_to_milliseconds(wh.getStart_date().getHours(), wh.getStart_date().getMinutes());
-        int end_date = convert_to_milliseconds((wh.getEnd_date().getHours(), wh.getEnd_date().getMinutes()));
+        int end_date = convert_to_milliseconds(wh.getEnd_date().getHours(), wh.getEnd_date().getMinutes());
         Time duration = new Time(end_date-start_date);
         return duration;
     }

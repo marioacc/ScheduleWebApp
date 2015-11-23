@@ -47,25 +47,25 @@ public class WorkHoursDAO {
     }
 
     public List<WorkHoursVO> findByAgendaId(String givenId){
-        List<WorkHoursVO> workhourss = new ArrayList<WorkHoursVO>();
+        List<WorkHoursVO> workhours = new ArrayList<WorkHoursVO>();
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("SELECT id, nombre, "
                     + "password, mail, agenda_id FROM workhours "
-                    + "WHERE ageda_id =" +givenId);
+                    + "WHERE agenda_id =" +givenId);
             ResultSet rs = pstmt.executeQuery();
 
             while(rs.next()){
-                WorkHoursVO workhours = new WorkHoursVO();
-                workhours.setId(rs.getString(1));
-                workhours.setDay(rs.getInt(2));
-                workhours.setStart_date(rs.getTime(3));
-                workhours.setEnd_date(rs.getTime(4));
-                workhours.setAgenda_id(rs.getString(5));
+                WorkHoursVO wh = new WorkHoursVO();
+                wh.setId(rs.getString(1));
+                wh.setDay(rs.getInt(2));
+                wh.setStart_date(rs.getTime(3));
+                wh.setEnd_date(rs.getTime(4));
+                wh.setAgenda_id(rs.getString(5));
 
-                workhourss.add(workhours);
+                workhours.add(wh);
             }
 
             rs.close();
@@ -78,7 +78,7 @@ public class WorkHoursDAO {
         catch(SQLException sqle){
             Logger.getLogger(WorkHoursDAO.class.getName()).log(Level.SEVERE, null, sqle);
         }
-        return workhourss;
+        return workhours;
     }
 
     public WorkHoursVO findById(String givenId){
