@@ -30,9 +30,14 @@
 </head>
 <body class = "schedule">
   <h1>Hello, username</h1>
-  <div>
-    <h2>Here's your weekly schedule</h2>
-    <img src="img/plus.svg">
+  <div class="container">
+    <div class="twelve columns">
+      <h2 class="seven columns">Here's your weekly schedule</h2>
+      <a
+              href="/workhours.html">
+        <img src="img/plus.svg" class="offset-by-two three columns" style="max-width: 5%; fill: #08A866" >
+      </a>
+    </div>
   </div>
   <table class="u-full-width">
     <thead>

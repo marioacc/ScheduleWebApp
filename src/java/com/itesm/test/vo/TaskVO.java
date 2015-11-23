@@ -1,9 +1,10 @@
 package com.itesm.test.vo;
 
 import java.io.Serializable;
-import java.sql.Date;
-import java.sql.Time;
 import java.sql.Timestamp;
+
+import java.util.Date;
+
 
 /**
  * Created by mario on 11/21/2015.
@@ -11,6 +12,7 @@ import java.sql.Timestamp;
 public class TaskVO implements Serializable{
 
     private String id;
+
 
     public String getId() {
         return id;
@@ -20,11 +22,11 @@ public class TaskVO implements Serializable{
         this.id = id;
     }
 
-    public Date getDay() {
+    public int getDay() {
         return day;
     }
 
-    public void setDay(Date day) {
+    public void setDay(int day) {
         this.day = day;
     }
 
@@ -63,7 +65,7 @@ public class TaskVO implements Serializable{
         this.work_hours_id = work_hours_id;
     }
 
-    private Date day;
+    private int day;
     private Timestamp start_date;
     private Timestamp end_date;
     private int priority;

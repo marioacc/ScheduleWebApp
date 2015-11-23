@@ -14,6 +14,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
@@ -37,15 +38,19 @@ public class SignInServlet extends HttpServlet {
         List <PersonaVO> personaVOs= personaManager.listar();
         for (PersonaVO persona: personaVOs){
             if(persona.getMail().equals(email) || persona.getMail().equals(email)){
+                setSession(persona,request);
                 RequestDispatcher rd = getServletContext().getRequestDispatcher("/index.jsp");
-                request.setAttribute("persona",persona);
                 rd.forward(request, response);
             }
         }
         personaManager.agregar(personaVO);
         RequestDispatcher rd = getServletContext().getRequestDispatcher("/welcome.jsp");
-        request.setAttribute("persona",personaVO);
         rd.forward(request, response);
 
+    }
+
+    private void setSession(PersonaVO personaVO, HttpServletRequest request){
+        HttpSession httpSession = request.getSession();
+        httpSession.setAttribute("persona",personaVO);
     }
 }

@@ -27,7 +27,7 @@ public class TaskDAO {
             while(rs.next()){
                 TaskVO task = new TaskVO();
                 task.setId(rs.getString(1));
-                task.setDay(rs.getDate(2));
+                task.setDay(rs.getInt(2));
                 task.setStart_date(rs.getTimestamp(3));
                 task.setEnd_date(rs.getTimestamp(4));
                 task.setPriority(rs.getInt(5));
@@ -64,7 +64,7 @@ public class TaskDAO {
             if(rs.next()){
                 tasksPorId = new TaskVO();
                 tasksPorId.setId(rs.getString(1));
-                tasksPorId.setDay(rs.getDate(2));
+                tasksPorId.setDay(rs.getInt(2));
                 tasksPorId.setStart_date(rs.getTimestamp(3));
                 tasksPorId.setEnd_date(rs.getTimestamp(4));
                 tasksPorId.setPriority(rs.getInt(5));
@@ -114,7 +114,7 @@ public class TaskDAO {
                         "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
                 PreparedStatement pstmt = conn.prepareStatement("UPDATE task " +
                         "SET day=?, start_time=?, end_time=?, priority=?, work_hours_id=? " + "WHERE id=?");
-                pstmt.setDate(1, task.getDay());
+                pstmt.setInt(1, task.getDay());
                 pstmt.setTimestamp(2, task.getStart_date());
                 pstmt.setTimestamp(3, task.getEnd_date());
                 pstmt.setInt(4, task.getPriority());
@@ -134,7 +134,7 @@ public class TaskDAO {
     }
 
 
-    public TaskVO insert(final Date day, final Timestamp start_date, final Timestamp end_date,
+    public TaskVO insert(final int day, final Timestamp start_date, final Timestamp end_date,
                          final int priority, final String work_hours_id){
         TaskVO task = null;
         try {
@@ -144,7 +144,7 @@ public class TaskDAO {
                     "jdbc:mysql://localhost/ejemplo?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("INSERT INTO task (day, start_time, end_time,priority"
                     + "work_hours_id)" + "VALUES (?, ?, ?, ?, ?)");
-            pstmt.setDate(1, day);
+            pstmt.setInt(1, day);
             pstmt.setTimestamp(2, start_date);
             pstmt.setTimestamp(3, end_date);
             pstmt.setInt(4, priority);
