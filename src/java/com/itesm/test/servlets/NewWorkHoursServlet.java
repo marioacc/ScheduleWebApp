@@ -39,37 +39,43 @@ import org.json.JSONObject;
 /**
  * Created by mario on 11/22/2015.
  */
-@WebServlet(name = "NewWorkHoursServlet", urlPatterns = {"/neworkhours"})
+@WebServlet(name = "NewWorkHoursServlet", urlPatterns = {"/newworkhours"})
 public class NewWorkHoursServlet extends HttpServlet {
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String workHoursJson = request.getParameter("workHours");
-        System.out.println(workHoursJson);
-        try {
-            JSONObject jsonObject= new JSONObject(workHoursJson);
-            JSONArray jsonArray =jsonObject.getJSONArray("hours");
-            PersonaVO personavo=(PersonaVO) request.getSession().getAttribute("persona");
-            WorkHoursManager workHoursManager= new WorkHoursManager();
-            for (int i = 0; i < jsonArray.length(); i++) {
-                JSONObject jsonO = jsonArray.getJSONObject(i);
-                WorkHoursVO wh= new WorkHoursVO();
-                wh.setDay(Integer.parseInt(jsonO.getString("day")));
-                System.out.println(wh.getDay());
-                SimpleDateFormat sdf= new SimpleDateFormat("hh:mm");
-                Date start_date= sdf.parse(jsonO.getString("start_time"));
-                Date end_date=sdf.parse(jsonO.getString("end_time"));
+        String start_time[]  = request.getParameterValues("start_time");
+        String[] end_time  = request.getParameterValues("end_time");
+        String[] day  = request.getParameterValues("day");
+        PersonaVO personavo=(PersonaVO) request.getSession().getAttribute("persona");
+        WorkHoursManager workHoursManager = new WorkHoursManager();
+        for (int i = 0; i < (start_time.length); i++) {
+            WorkHoursVO wh= new WorkHoursVO();
+            String day_num = day[i];
+            wh.setDay(Integer.parseInt(day[i]));
+            System.out.println(wh.getDay());
+            SimpleDateFormat sdf= new SimpleDateFormat("hh:mm");
+            try{
+                Date start_date= sdf.parse(start_time[i]);
+                Date end_date=sdf.parse(end_time[i]);
                 wh.setStart_date(new Time(start_date.getTime()));
                 wh.setEnd_date(new Time(end_date.getTime()));
-                wh.setAgenda_id(personavo.getAgenda_id());
-                System.out.println(wh.toString());
-                workHoursManager.agregar(wh);
+            }catch (ParseException e){
+                System.out.println(e.getMessage());
             }
-            response.sendRedirect("/tasks.jsp");
-        } catch (JSONException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
+            wh.setAgenda_id(personavo.getAgenda_id());
+            System.out.println(wh.toString());
+            workHoursManager.agregar(wh);
         }
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/tasks.jsp");
+        rd.forward(request, response);
+
+//            response.getWriter().write("{ 'success': true, 'location': 'tasks.jsp' }");
+
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
 
 
     }
@@ -79,4 +85,48 @@ public class NewWorkHoursServlet extends HttpServlet {
         httpSession.setAttribute("workHours",workHours);
     }
 
+//    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+//            throws ServletException, IOException {
+//        String workHoursJson = request.getParameter("workHours");
+//        System.out.println(workHoursJson);
+//        try {
+//            JSONObject jsonObject= new JSONObject(workHoursJson);
+//            JSONArray jsonArray =jsonObject.getJSONArray("hours");
+//            PersonaVO personavo=(PersonaVO) request.getSession().getAttribute("persona");
+//            WorkHoursManager workHoursManager= new WorkHoursManager();
+//            for (int i = 0; i < jsonArray.length(); i++) {
+//                JSONObject jsonO = jsonArray.getJSONObject(i);
+//                WorkHoursVO wh= new WorkHoursVO();
+//                wh.setDay(Integer.parseInt(jsonO.getString("day")));
+//                System.out.println(wh.getDay());
+//                SimpleDateFormat sdf= new SimpleDateFormat("hh:mm");
+//                Date start_date= sdf.parse(jsonO.getString("start_time"));
+//                Date end_date=sdf.parse(jsonO.getString("end_time"));
+//                wh.setStart_date(new Time(start_date.getTime()));
+//                wh.setEnd_date(new Time(end_date.getTime()));
+//                wh.setAgenda_id(personavo.getAgenda_id());
+//                System.out.println(wh.toString());
+//                workHoursManager.agregar(wh);
+//            }
+//            RequestDispatcher rd = getServletContext().getRequestDispatcher("/tasks.jsp");
+//            rd.forward(request, response);
+//            System.out.println("gg dude");
+//            response.setContentType("application/json");
+//            response.getWriter().write("{ 'success': true, 'location': 'tasks.jsp' }");
+//
+//        } catch (JSONException e) {
+//            e.printStackTrace();
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
+//
+//
+//    }
+
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/workhours.jsp");
+        rd.forward(req,resp);
+    }
 }

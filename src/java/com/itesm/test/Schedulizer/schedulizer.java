@@ -25,31 +25,44 @@ public class schedulizer {
                 int q = (p + r) / 2;
                 sortByDuedate(task_array, p, q);
                 sortByDuedate(task_array, q + 1, r);
-                return merge(task_array, p, q, r);
+                List<TaskVO> tsk=merge(task_array, p, q, r);
+                return tsk;
             }
         return empty;
     }
     /*merge sort: p is the beggining, q is the n/2 and r is the end*/
     private List<TaskVO> merge (List<TaskVO> task_array,int p, int q, int r){
-        int n_one = q-p+1;
+        int n_one = q;
         int n_two = r-q;
-        List<TaskVO> left = new ArrayList<TaskVO>();
-        List<TaskVO> right = new ArrayList<TaskVO>();
-        for (int i=1; i<=n_one; i++){
-            left.set(i,task_array.get(p+i-1));
-        }
-        for (int j=1; j<=n_two; j++){
-            right.set(j,task_array.get(q+j));
-        }
+        List<TaskVO> left = task_array.subList(1,q);
+        List<TaskVO> right = task_array.subList(q+1,r);
         int i=1;
         int j=1;
-        for (int k=p; k<=r; k++) {
-            if (CompareDates(left.get(i).getEnd_date(), right.get(j).getEnd_date()) == 1) {
-                task_array.set(k, left.get(i));
-                i++;
-            } else {
-                task_array.set(k, right.get(j));
-                j++;
+        for (int k=p; k<r; k++) {
+            if((i<left.size()-1 && j<right.size()-1) ){
+
+                if (left.get(i)!= null && right.get(j)!= null){
+
+                    if (CompareDates(left.get(i).getEnd_date(), right.get(j).getEnd_date()) == 1) {
+                        task_array.set(k, left.get(i));
+                        i++;
+                    }
+                    else {
+                        task_array.set(k, right.get(j));
+                        j++;
+
+                    }
+                }
+            }else if(left.size()<=i && j<right.size() ){
+                while(j<right.size()) {
+                    task_array.set(k, right.get(j));
+                    j++;
+                }
+            }else if(left.size()>i && j>=right.size() ){
+                while(i<left.size()) {
+                    task_array.set(k, left.get(i));
+                    i++;
+                }
             }
         }
         return task_array;

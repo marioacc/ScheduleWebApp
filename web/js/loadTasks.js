@@ -5,18 +5,18 @@ var tasks={
     tasks:[]
 };
 function addTask(){
-    var start_time=$("#task_time").val();
-    var priority=$("#priority").val();
-    var description= $("#taskname").val();
-    var end_time= $("#task_timestamp").val();
-
-    tasks.tasks.push({
-        "priority":priority,
-        "duration":start_time,
-        "description":description,
-        "end_time":end_time
-
-    });
+    //var start_time=$("#task_time").val();
+    //var priority=$("#priority").val();
+    //var description= $("#taskname").val();
+    //var end_time= $("#task_timestamp").val();
+    //
+    //tasks.tasks.push({
+    //    "priority":priority,
+    //    "duration":start_time,
+    //    "description":description,
+    //    "end_time":end_time
+    //
+    //});
     newTask();
 }
 
@@ -27,8 +27,16 @@ function newTask(){
     $("#priority").attr("disabled", true).attr("type", "text").removeAttr("id","priority");
     $("#taskname").attr("readonly", true).attr("type", "text").removeAttr("id","taskname");
     $("#task_timestamp").attr("readonly", true).attr("type", "text").removeAttr("id","task_timestamp");
-    $("#taskSection").append(TaskSection);
+    $("#submitSection").before(TaskSection);
 }
+
+
+$("#add").click(function(event)
+{
+    event.preventDefault(); // cancel default behavior
+
+    //... rest of add logic
+});
 
 function sendTasks(){
     console.log(tasks);

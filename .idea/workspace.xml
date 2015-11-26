@@ -2,24 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b48dfcf-659c-41c7-874a-ce26e7c19196" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/joda_time_joda_time_2_9.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/dao/TaskDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/dao/TaskDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/dao/WorkHoursDAO.class" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/dao/WorkHoursDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/manager/TaskManager.class" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/manager/TaskManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/manager/WorkHoursManager.class" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/manager/WorkHoursManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/vo/TaskVO.class" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/vo/TaskVO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/vo/WorkHoursVO.class" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/vo/WorkHoursVO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/servlets/NewWorkHoursServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/WEB-INF/classes/com/itesm/test/servlets/NewWorkHoursServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/dao/TaskDAO.class" afterPath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/dao/TaskDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/dao/WorkHoursDAO.class" afterPath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/dao/WorkHoursDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/manager/TaskManager.class" afterPath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/manager/TaskManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/manager/WorkHoursManager.class" afterPath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/manager/WorkHoursManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/vo/TaskVO.class" afterPath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/vo/TaskVO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/vo/WorkHoursVO.class" afterPath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/vo/WorkHoursVO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/servlets/NewWorkHoursServlet.class" afterPath="$PROJECT_DIR$/out/production/myFirstApplication/com/itesm/test/servlets/NewWorkHoursServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/css/main.css" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/databaseCreation.txt" afterPath="$PROJECT_DIR$/databaseCreation.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/js/loadWorkHours.js" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/js/loadWorkHours.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/schedule.jsp" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/schedule.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/tasks.jsp" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/tasks.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/welcome.jsp" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/welcome.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/war_exploded/workhours.jsp" afterPath="$PROJECT_DIR$/out/artifacts/war_exploded/workhours.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/CreateSchedule.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/CreateSchedule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/dao/TaskDAO.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/dao/TaskDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/dao/WorkHoursDAO.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/dao/WorkHoursDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/manager/TaskManager.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/manager/TaskManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/NewWorkHoursServlet.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/NewWorkHoursServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java" afterPath="$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/myFirstApplication.iml" afterPath="$PROJECT_DIR$/src/myFirstApplication.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/loadTasks.js" afterPath="$PROJECT_DIR$/web/js/loadTasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/loadWorkHours.js" afterPath="$PROJECT_DIR$/web/js/loadWorkHours.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/schedule.jsp" afterPath="$PROJECT_DIR$/web/schedule.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/tasks.jsp" afterPath="$PROJECT_DIR$/web/tasks.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/workhours.jsp" afterPath="$PROJECT_DIR$/web/workhours.jsp" />
     </list>
     <ignored path="myFirstApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +44,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/myFirstApplication$Tomcat.coverage" NAME="Tomcat Coverage Results" MODIFIED="1448486935146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -42,32 +63,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="databaseCreation.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/databaseCreation.txt">
+      <file leaf-file-name="workhours.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/workhours.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+              <caret line="38" column="68" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TasksServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java">
+      <file leaf-file-name="loadWorkHours.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/loadWorkHours.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateSchedule.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/CreateSchedule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18072289">
-              <caret line="66" column="106" selection-start-line="66" selection-start-column="106" selection-end-line="66" selection-end-column="106" />
-              <folding />
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+              <folding>
+                <element signature="n#!!doc;n#addWorkHour#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/web/js/loadTasks.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="18" />
+              <caret line="27" column="88" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -84,12 +97,66 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/manager/TaskManager.java">
+      <file leaf-file-name="welcome.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/welcome.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="82" selection-start-line="37" selection-start-column="82" selection-end-line="37" selection-end-column="82" />
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tasks.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/tasks.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schedule.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/schedule.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewWorkHoursServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/NewWorkHoursServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TasksServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateSchedule.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/CreateSchedule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="3.7880795">
+              <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,22 +209,24 @@
         <option value="$PROJECT_DIR$/src/java/com/itesm/test/dao/AgendaDAO.java" />
         <option value="$PROJECT_DIR$/src/java/com/itesm/test/vo/PersonaVO.java" />
         <option value="$PROJECT_DIR$/src/java/com/itesm/test/dao/PersonaDAO.java" />
-        <option value="$PROJECT_DIR$/src/java/com/itesm/test/servlets/NewWorkHoursServlet.java" />
-        <option value="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/CreateSchedule.java" />
-        <option value="$PROJECT_DIR$/src/java/com/itesm/test/dao/WorkHoursDAO.java" />
         <option value="$PROJECT_DIR$/src/java/com/itesm/test/manager/WorkHoursManager.java" />
-        <option value="$PROJECT_DIR$/web/schedule.jsp" />
         <option value="$PROJECT_DIR$/web/welcome.jsp" />
         <option value="$PROJECT_DIR$/out/artifacts/war_exploded/workhours.jsp" />
-        <option value="$PROJECT_DIR$/web/workhours.jsp" />
-        <option value="$PROJECT_DIR$/web/js/loadWorkHours.js" />
         <option value="$PROJECT_DIR$/web/css/main.css" />
-        <option value="$PROJECT_DIR$/web/tasks.jsp" />
-        <option value="$PROJECT_DIR$/web/js/loadTasks.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/java/com/itesm/test/manager/TaskManager.java" />
+        <option value="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java" />
+        <option value="$PROJECT_DIR$/src/java/com/itesm/test/dao/WorkHoursDAO.java" />
         <option value="$PROJECT_DIR$/databaseCreation.txt" />
         <option value="$PROJECT_DIR$/src/java/com/itesm/test/dao/TaskDAO.java" />
         <option value="$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java" />
+        <option value="$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/CreateSchedule.java" />
+        <option value="$PROJECT_DIR$/web/js/loadTasks.js" />
+        <option value="$PROJECT_DIR$/web/tasks.jsp" />
+        <option value="$PROJECT_DIR$/web/schedule.jsp" />
+        <option value="$PROJECT_DIR$/src/java/com/itesm/test/servlets/NewWorkHoursServlet.java" />
+        <option value="$PROJECT_DIR$/web/workhours.jsp" />
+        <option value="$PROJECT_DIR$/web/js/loadWorkHours.js" />
       </list>
     </option>
   </component>
@@ -179,6 +248,9 @@
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -211,8 +283,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -300,6 +372,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -403,6 +479,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myFirstApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebAppProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -417,7 +519,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nbproject" />
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="production" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myFirstApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itesm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,6 +550,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="WebAppProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="war_exploded" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myFirstApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebAppProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="war_exploded" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -445,7 +605,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="artifacts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="war_exploded" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -460,8 +632,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/org.json-20120521.jar!/" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myFirstApplication - Copy" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.17356321" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -480,6 +652,7 @@
       <recent name="com.itesm.test.servlets" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mario\Documents\GitHub\WebAppProject\src\java\com\itesm\test\Schedulizer" />
       <recent name="C:\Users\mario\Documents\GitHub\WebAppProject\lib" />
       <recent name="C:\Users\mario\Documents\GitHub\WebAppProject\web\img" />
       <recent name="C:\Users\mario\Documents\GitHub\myFirstApplication\web\persona" />
@@ -1041,6 +1214,7 @@
       <method />
     </configuration>
     <configuration default="false" name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.281" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
@@ -1115,8 +1289,8 @@
       </method>
     </configuration>
     <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.PersonaManager" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat" />
+      <item index="1" class="java.lang.String" itemvalue="Application.PersonaManager" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -1145,7 +1319,11 @@
       <workItem from="1448220553523" duration="16594000" />
       <workItem from="1448250776420" duration="25610000" />
       <workItem from="1448276620205" duration="281000" />
-      <workItem from="1448277488038" duration="11573000" />
+      <workItem from="1448277488038" duration="32954000" />
+      <workItem from="1448405977891" duration="6804000" />
+      <workItem from="1448429474990" duration="1294000" />
+      <workItem from="1448470736485" duration="23431000" />
+      <workItem from="1448502304542" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="The project up to date with the agenda VO,DAO y Manager added">
       <created>1448063389851</created>
@@ -1189,41 +1367,57 @@
       <option name="project" value="LOCAL" />
       <updated>1448298784830</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="servelt for task section is working">
+      <created>1448298795508</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1448298795508</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81465000" />
+    <option name="totallyTimeSpent" value="134398000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13584287" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36497545" sideWeight="0.5030257" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7075163" sideWeight="0.5080906" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1391162" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20499243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21767594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50378215" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39770868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7087034" sideWeight="0.49190938" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22258593" sideWeight="0.49285713" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="CSS Styles" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21767594" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1251,128 +1445,59 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java</url>
-          <line>52</line>
+          <line>98</line>
           <properties />
-          <option name="timeStamp" value="17" />
+          <option name="timeStamp" value="171" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java</url>
-          <line>53</line>
+          <line>70</line>
           <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="179" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java</url>
-          <line>54</line>
+          <url>file://$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/CreateSchedule.java</url>
+          <line>127</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java</url>
-          <line>51</line>
+          <url>file://$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/CreateSchedule.java</url>
+          <line>128</line>
           <properties />
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="182" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java</url>
-          <line>55</line>
+          <url>file://$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/CreateSchedule.java</url>
+          <line>74</line>
           <properties />
-          <option name="timeStamp" value="21" />
+          <option name="timeStamp" value="187" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java</url>
+          <url>file://$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/CreateSchedule.java</url>
           <line>56</line>
           <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="189" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="25" />
+      <option name="time" value="191" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="tasks_list" />
+        <watch expression="tasks_list" />
+        <watch expression="lTS" />
+        <watch expression="rTS" />
+        <watch expression="righ" />
+        <watch expression="rs" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/dao/WorkHoursDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="183" column="0" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#WorkHoursDAO#0" expanded="false" />
-            <marker date="1448277942547" expanded="true" signature="683:804" placeholder="SELECT id, n..workhours..." />
-            <marker date="1448277942547" expanded="true" signature="2119:2246" placeholder="SELECT id, n..workhours..." />
-            <marker date="1448277942547" expanded="true" signature="3483:3618" placeholder="SELECT id, n..workhours..." />
-            <marker date="1448277942547" expanded="true" signature="4860:4892" placeholder="DELETE FROM ..." />
-            <marker date="1448277942547" expanded="true" signature="5711:5822" placeholder="UPDATE work_..." />
-            <marker date="1448277942547" expanded="true" signature="7001:7110" placeholder="INSERT INTO work_hours..." />
-            <marker date="1448277942547" expanded="true" signature="7380:7403" placeholder="SELECT LAST_..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/manager/WorkHoursManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/NewWorkHoursServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/vo/PersonaVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="e#485#486#0" expanded="false" />
-            <element signature="e#516#517#0" expanded="false" />
-            <element signature="e#963#964#0" expanded="false" />
-            <element signature="e#988#989#0" expanded="false" />
-            <element signature="e#1071#1072#0" expanded="false" />
-            <element signature="e#1099#1100#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/workhours.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="83" selection-start-line="60" selection-start-column="83" selection-end-line="60" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/loadWorkHours.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/persona/date.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1454,9 +1579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33246073">
           <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1474,17 +1596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9056604">
-          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
-          <folding>
-            <marker date="1448225871011" expanded="true" signature="1342:1693" placeholder="..." />
-            <marker date="1448225871011" expanded="true" signature="1804:2309" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/img/plus.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1496,17 +1607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3454546">
           <caret line="237" column="44" selection-start-line="237" selection-start-column="43" selection-end-line="237" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.210526">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#789#790#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1528,7 +1628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.425">
           <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1536,14 +1635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <marker date="1448273806124" expanded="true" signature="654:769" placeholder="SELECT id, s..agenda..." />
-            <marker date="1448273806124" expanded="true" signature="2062:2161" placeholder="INSERT INTO persona..." />
-            <marker date="1448273806124" expanded="true" signature="2405:2428" placeholder="SELECT LAST_..." />
-            <marker date="1448273806124" expanded="true" signature="3516:3544" placeholder="DELETE FROM ..." />
-            <marker date="1448273806124" expanded="true" signature="4352:4468" placeholder="SELECT id, s..persona..." />
-            <marker date="1448273806124" expanded="true" signature="5674:5789" placeholder="UPDATE perso..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1551,46 +1642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="161" column="50" selection-start-line="161" selection-start-column="50" selection-end-line="161" selection-end-column="50" />
-          <folding>
-            <marker date="1448274636914" expanded="true" signature="974:1077" placeholder="SELECT id, n..persona..." />
-            <marker date="1448274636914" expanded="true" signature="2392:2511" placeholder="SELECT id, n..persona..." />
-            <marker date="1448274636914" expanded="true" signature="3809:3838" placeholder="DELETE FROM ..." />
-            <marker date="1448274636914" expanded="true" signature="4698:4800" placeholder="UPDATE perso..." />
-            <marker date="1448274636914" expanded="true" signature="5964:6068" placeholder="INSERT INTO persona..." />
-            <marker date="1448274636914" expanded="true" signature="6403:6426" placeholder="SELECT LAST_..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/vo/WorkHoursVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42777777">
-          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/SignInServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="53" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/dao/WorkHoursDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
-          <folding>
-            <element signature="docComment;class#WorkHoursDAO#0" expanded="false" />
-            <marker date="1448277942547" expanded="true" signature="683:804" placeholder="SELECT id, n..workhours..." />
-            <marker date="1448277942547" expanded="true" signature="2119:2246" placeholder="SELECT id, n..workhours..." />
-            <marker date="1448277942547" expanded="true" signature="3483:3618" placeholder="SELECT id, n..workhours..." />
-            <marker date="1448277942547" expanded="true" signature="4860:4892" placeholder="DELETE FROM ..." />
-            <marker date="1448277942547" expanded="true" signature="5711:5822" placeholder="UPDATE work_..." />
-            <marker date="1448277942547" expanded="true" signature="7001:7110" placeholder="INSERT INTO work_hours..." />
-            <marker date="1448277942547" expanded="true" signature="7380:7403" placeholder="SELECT LAST_..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1598,7 +1649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1606,15 +1656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.754717">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1630,49 +1671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8461537">
           <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/workhours.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.230769">
-          <caret line="62" column="2" selection-start-line="62" selection-start-column="2" selection-end-line="63" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/loadWorkHours.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/schedule.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7307692">
-          <caret line="34" column="64" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/WorkHoursServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="99" selection-start-line="29" selection-start-column="99" selection-end-line="29" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/NewWorkHoursServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6">
-          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1680,11 +1678,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#516#517#0" expanded="false" />
-            <element signature="e#635#636#0" expanded="false" />
-            <element signature="e#662#663#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="563" column="6" selection-start-line="563" selection-start-column="6" selection-end-line="563" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/schedulizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/WorkHoursServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="99" selection-start-line="29" selection-start-column="99" selection-end-line="29" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/ServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1692,6 +1720,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/Schedulizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.092857145">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/SignInServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5904762">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48730963">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/sql/Time.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.46354166">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/dao/WorkHoursDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/manager/TaskManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/vo/WorkHoursVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/databaseCreation.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/vo/TaskVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/dao/TaskDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/tasks.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1699,69 +1805,72 @@
     <entry file="file://$PROJECT_DIR$/web/js/loadTasks.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="18" />
+          <caret line="27" column="88" selection-start-line="27" selection-start-column="88" selection-end-line="27" selection-end-column="88" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/manager/TaskManager.java">
+    <entry file="file://$PROJECT_DIR$/web/welcome.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="82" selection-start-line="37" selection-start-column="82" selection-end-line="37" selection-end-column="82" />
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/dao/TaskDAO.java">
+    <entry file="file://$PROJECT_DIR$/web/schedule.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.024096385">
-          <caret line="234" column="50" selection-start-line="234" selection-start-column="50" selection-end-line="234" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/workhours.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="68" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/loadWorkHours.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
-            <element signature="e#3457#3465#0" expanded="true" />
-            <element signature="e#5009#5017#0" expanded="true" />
-            <marker date="1448289383904" expanded="true" signature="630:787" placeholder="SELECT id, d..." />
-            <marker date="1448289383904" expanded="true" signature="2136:2291" placeholder="SELECT id, d..." />
-            <marker date="1448289383904" expanded="true" signature="3744:3908" placeholder="SELECT id, d..." />
-            <marker date="1448289383904" expanded="true" signature="5296:5456" placeholder="SELECT id, d..." />
-            <marker date="1448289383904" expanded="true" signature="6783:6809" placeholder="DELETE FROM ..." />
-            <marker date="1448289383904" expanded="true" signature="7603:7724" placeholder="UPDATE task ..." />
-            <marker date="1448289383904" expanded="true" signature="8973:9103" placeholder="INSERT INTO task..." />
-            <marker date="1448289383904" expanded="true" signature="9464:9487" placeholder="SELECT LAST_..." />
+            <element signature="n#!!doc;n#addWorkHour#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/tasks.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6588983">
-          <caret line="56" column="70" selection-start-line="56" selection-start-column="67" selection-end-line="56" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/databaseCreation.txt">
+    <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/NewWorkHoursServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
-          <folding />
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/servlets/TasksServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
+          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/itesm/test/Schedulizer/CreateSchedule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18072289">
-          <caret line="66" column="106" selection-start-line="66" selection-start-column="106" selection-end-line="66" selection-end-column="106" />
-          <folding />
+        <state vertical-scroll-proportion="3.7880795">
+          <caret line="72" column="58" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1845,7 +1954,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>org.json-20120521</last-edited>
+          <last-edited>joda-time:joda-time:2.9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

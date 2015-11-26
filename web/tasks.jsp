@@ -32,41 +32,45 @@
   <h2>Enter your tasks...</h2>
   <p>Select a priority for each task. Multiple tasks can have the same priority. The larger the number, the higher the priority.</p>
   <div class = "row" id="taskSection">
-    <div class="twelve columns" id="taskRow">
-        <div class = "four columns">
-          <label for= "taskname" >Description:</label>
-          <input type= "text" id= "taskname" name="description" class= "eleven columns">
+    <form class="twelve columns"  action="/addtasks" method="post">
+        <div id="taskRow" class="twelve columns">
+            <div class = "four columns" >
+                <label for= "taskname" >Description:</label>
+                <input type= "text" id= "taskname" name="description" class= "eleven columns">
+            </div>
+            <div class = "three columns">
+                <label for= "priority" >Priority:</label>
+                <select id="priority" name="priority" class= "seven columns">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class = "three columns">
+                <label for= "time" >Estimate time to complete:</label>
+                <input type="time" class= "ten columns" name="task_time" id= "task_time">
+            </div>
+            <div class = "three columns">
+                <label for= "timestamp" >Fecha de entrega:</label>
+                <input type="datetime-local" class= "ten columns"  name ="end_time" id= "task_timestamp">
+            </div>
         </div>
-        <div class = "three columns">
-          <label for= "priority" >Priority:</label>
-           <select id="priority" name="priority" class= "seven columns">
-            <option value="1" selected>1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
+
+        <div class="row twelve columns" name="submitSection" id="submitSection">
+            <button class = "  two columns button-primary center-big " id="add" onclick="addTask();return false;">+</button>
+            <button class = "two columns button-primary center-big " value="submit">&#x2713</button>
         </div>
-        <div class = "three columns">
-          <label for= "time" >Estimate time to complete:</label>
-          <input type="time" class= "ten columns" name="time" id= "task_time">
-        </div>
-        <div class = "three columns">
-            <label for= "timestamp" >Fecha de entrega:</label>
-            <input type="datetime-local" class= "ten columns" name="timestamp" id= "task_timestamp">
-        </div>
-    </div>
+    </form>
   </div>
 
-  <div class="row ">
-      <button class = "  two columns button-primary center-big " onclick="addTask()">+</button>
-      <button class = "two columns button-primary center-big " onclick="sendTasks()">&#x2713</button>
-  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="js/loadTasks.js"></script>
 </body>

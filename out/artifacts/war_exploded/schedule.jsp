@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +31,7 @@
 </head>
 <body class = "schedule">
   <h1>Hello, username</h1>
+  <h1></h1>
   <div class="container">
     <div class="twelve columns">
       <h2 class="seven columns">Here's your weekly schedule</h2>
@@ -52,6 +54,82 @@
       </tr>
     </thead>
     <tbody id="schedule">
+    <tbody id="schedule">
+    <tr>
+      ${requestScope.tasks}
+      <td>
+        <c:forEach var="task" items="${requestScope.tasks}">
+       
+          <c:if test="${task.day ==  1 }">
+            ${task.description}
+            ${task.start_date}
+            ${task.end_date}
+          </c:if>
+        </c:forEach>
+      </td>
+      <td>
+        <c:forEach var="task" items="${requestScope.tasks}">
+
+          <c:if test="${task.day ==  2 }">
+            ${task.description}
+            ${task.start_date}
+            ${task.end_date}
+          </c:if>
+        </c:forEach>
+      </td>
+      <td>
+        <c:forEach var="task" items="${requestScope.tasks}">
+
+          <c:if test="${task.day ==  3 }">
+            ${task.description}
+            ${task.start_date}
+            ${task.end_date}
+          </c:if>
+        </c:forEach>
+      </td>
+      <td>
+        <c:forEach var="task" items="${requestScope.tasks}">
+
+          <c:if test="${task.day ==  4 }">
+            ${task.description}
+            ${task.start_date}
+            ${task.end_date}
+          </c:if>
+        </c:forEach>
+      </td>
+      <td>
+        <c:forEach var="task" items="${requestScope.tasks}">
+
+          <c:if test="${task.day ==  5 }">
+            ${task.description}
+            ${task.start_date}
+            ${task.end_date}
+          </c:if>
+        </c:forEach>
+      </td>
+      <td>
+        <c:forEach var="task" items="${requestScope.tasks}">
+
+          <c:if test="${task.day ==  6 }">
+            ${task.description}
+            ${task.start_date}
+            ${task.end_date}
+          </c:if>
+        </c:forEach>
+      </td>
+      <td>
+        <c:forEach var="task" items="${requestScope.tasks}">
+
+          <c:if test="${task.day ==  7 }">
+            ${task.description}
+            ${task.start_date}
+            ${task.end_date}
+          </c:if>
+        </c:forEach>
+      </td>
+
+    </tr>
+    </tbody>
     </tbody>
   </table>
   <!--<div class = "row">

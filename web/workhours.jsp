@@ -32,34 +32,28 @@
 </head>
 <body class = "workinghours">
   <h2>Select your free time to work on your projects and tasks</h2>
-  <div class = "row" id="workHoursSection">
+  <form action="/newworkhours" method="post" class = "row" id="workHoursSection">
     <div id="workHourRow">
       <div class = "two columns">
-        <label for= "weekdays" >Days:</label>
-        <select id="weekdays" class= "seven columns" required="required">
-          <option value="1" selected>SUN</option>
-          <option value="2">MON</option>
-          <option value="3">TUE</option>
-          <option value="4">WED</option>
-          <option value="5">THU</option>
-          <option value="6">FRI</option>
-          <option value="7">SAT</option>
-        </select>
+        <label for= "day" >Days:</label>
+        <input type="text" id="day" class= "seven columns" name="day" required="required" pattern="[1-7]">
       </div>
       <div class = "five columns">
         <label for= "start_time" >From:</label>
-        <input type="time" class= "ten columns" id= "start_time" required="required">
+        <input type="time" name="start_time" class= "ten columns" id= "start_time" required="required">
       </div>
-      <div class = "five columns">
+      <div class = "five columns" >
         <label for= "end_time" >To:</label>
-        <input type="time" class= "ten columns" id= "end_time" required="required">
+        <input type="time" name="end_time" class= "ten columns" id= "end_time" required="required">
       </div>
     </div>
-  </div>
-  <div class="row ">
-    <button class = "  two columns button-primary center-big " onclick="addWorkHour()">+</button>
-    <button class = "two columns button-primary center-big " onclick="sendWorkHours()">&#x2713</button>
-  </div>
+
+    <div class="row " id="submitSection">
+      <button class = "  two columns button-primary center-big " id="add"  onclick="addWorkHour();return false;">+</button>
+      <button class = "two columns button-primary center-big " value="submit">&#x2713</button>
+    </div>
+  </form>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="js/loadWorkHours.js"></script>
 </body>

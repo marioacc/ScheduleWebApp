@@ -52,18 +52,18 @@ public class WorkHoursDAO {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost/DB?user=root&password=admin");
-            PreparedStatement pstmt = conn.prepareStatement("SELECT id, nombre, "
-                    + "password, mail, agenda_id FROM workhours "
+            PreparedStatement pstmt = conn.prepareStatement("SELECT id, day, "
+                    + "start_time, end_time, agenda_id FROM work_hours "
                     + "WHERE agenda_id =" +givenId);
             ResultSet rs = pstmt.executeQuery();
 
             while(rs.next()){
                 WorkHoursVO wh = new WorkHoursVO();
-                wh.setId(rs.getString(1));
+                wh.setId(""+rs.getInt(1));
                 wh.setDay(rs.getInt(2));
                 wh.setStart_date(rs.getTime(3));
                 wh.setEnd_date(rs.getTime(4));
-                wh.setAgenda_id(rs.getString(5));
+                wh.setAgenda_id(""+rs.getInt(5));
 
                 workhours.add(wh);
             }
@@ -88,7 +88,7 @@ public class WorkHoursDAO {
             Connection conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("SELECT id, nombre, "
-                    + "apellido_paterno, apellido_materno, alias FROM workhours "
+                    + "apellido_paterno, apellido_materno, alias FROM work_hours "
                     + "WHERE id="+givenId);
             ResultSet rs = pstmt.executeQuery();
 

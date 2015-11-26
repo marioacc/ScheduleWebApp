@@ -35,7 +35,7 @@ public class TaskManager {
     public void agregar(final TaskVO persona){
         TaskDAO dao = new TaskDAO();
         dao.insert(persona.getDay(), persona.getStart_date(),
-                persona.getEnd_date(), persona.getPriority(),persona.getDuration(),persona.getDescription(),persona.getWork_hours_id());
+                persona.getEnd_date(), persona.getPriority(),persona.getDuration(),persona.getDescription(),persona.getWork_hours_id(), persona.getAgenda_id());
     }
 
     public static void main(String[] args){

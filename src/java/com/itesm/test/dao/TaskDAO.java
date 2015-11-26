@@ -131,21 +131,24 @@ public class TaskDAO {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost/DB?user=root&password=admin");
-            PreparedStatement pstmt = conn.prepareStatement("SELECT id, day, start_time"
-                    + ", end_time, priority, work_hours_id,description,agenda_id FROM task "
+            PreparedStatement pstmt = conn.prepareStatement("SELECT id, day"
+                    + ", end_time, priority,duration, work_hours_id,description,agenda_id FROM task "
                     + "WHERE agenda_id=" + givenId);
             ResultSet rs = pstmt.executeQuery();
+
+
 
             while(rs.next()){
                 TaskVO task = new TaskVO();
                 task.setId(rs.getString(1));
                 task.setDay(rs.getInt(2));
-                task.setEnd_date(rs.getTimestamp(4));
-                task.setPriority(rs.getInt(5));
+                task.setEnd_date(rs.getTimestamp(3));
+                task.setPriority(rs.getInt(4));
+                task.setDuration(rs.getTime(5));
                 task.setWork_hours_id(rs.getString(6));
                 task.setDescription(rs.getString(7));
-                task.setAgenda_id(rs.getString(8));
-                task.setStart_date();
+                task.setAgenda_id(givenId);
+
 
                 tasks.add(task);
             }
@@ -192,12 +195,16 @@ public class TaskDAO {
                 Connection conn = DriverManager.getConnection(
                         "jdbc:mysql://localhost/DB?user=root&password=admin");
                 PreparedStatement pstmt = conn.prepareStatement("UPDATE task " +
-                        "SET day=?, start_time=?, end_time=?, priority=?, work_hours_id=? " + "WHERE id=?");
+                        "SET day=?, start_time=?, end_time=?, priority=?,duration=? ,work_hours_id=?, description=?, agenda_id=? " + "WHERE id=?");
                 pstmt.setInt(1, task.getDay());
                 pstmt.setTimestamp(2, task.getStart_date());
                 pstmt.setTimestamp(3, task.getEnd_date());
                 pstmt.setInt(4, task.getPriority());
-                pstmt.setString(5, task.getWork_hours_id());
+                pstmt.setTime(5, task.getDuration());
+                pstmt.setInt(6,Integer.parseInt(task.getWork_hours_id()));
+                pstmt.setString(7, task.getDescription());
+                pstmt.setString(8, task.getAgenda_id());
+                pstmt.setInt(9,Integer.parseInt(task.getId()));
 
                 pstmt.executeUpdate();
                 pstmt.close();
@@ -214,7 +221,7 @@ public class TaskDAO {
 
 
     public TaskVO insert(final int day, final Timestamp start_date, final Timestamp end_date,
-                         final int priority, final Time duration,final String description,final String work_hours_id){
+                         final int priority, final Time duration,final String description,final String work_hours_id, final String agenda_id){
         TaskVO task = null;
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -222,13 +229,15 @@ public class TaskDAO {
             Connection conn = DriverManager.getConnection(
                     "jdbc:mysql://localhost/DB?user=root&password=admin");
             PreparedStatement pstmt = conn.prepareStatement("INSERT INTO task (day, start_time, end_time,priority"
-                    + ",duration,work_hours_id)" + "VALUES (?, ?, ?, ?, ?,?)");
+                    + ",duration,work_hours_id, agenda_id, description)" + "VALUES (?, ?, ?, ?, ?,?,?,?)");
             pstmt.setInt(1, day);
             pstmt.setTimestamp(2, start_date);
             pstmt.setTimestamp(3, end_date);
             pstmt.setInt(4, priority);
             pstmt.setTime(5, duration);
             pstmt.setString(6,work_hours_id);
+            pstmt.setString(7,agenda_id);
+            pstmt.setString(8,description);
             pstmt.executeUpdate();
             pstmt.close();
 
